@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+    <style>
+        img {
+            max-width: 100%; /* Garante que a imagem não ultrapasse a largura do contêiner pai */
+            height: auto; /* Garante a proporção correta da imagem */
+            display: block; /* Remove espaços extras abaixo da imagem */
+        }
+    </style>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes,<br>
+    ou simplimente aumente e diminua o tamanho do seu navegador.</p>
+    <picture>
+        <!-- Adapte os caminhos das imagens conforme necessário -->
+        <source media="(max-width: 500px)" srcset="imagens/p.png">
+        <source media="(max-width: 800px)" srcset="imagens/m.png">
+        <source srcset="imagens/g.png">
+        <img src="imagens/g.png" alt="Imagem Dinâmica">
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos reproduzir áudios em HTML5.</p>
+    <audio controls preload="metadata">
+        <source src="helium-tracktribe.mp3" type="audio/mp3">
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="helium-tracktribe.mp3">Clique aqui para baixar o arquivo MP3.</a></p>
+    </audio>
+    <p>Se a música não pegar, infelizmente seu navegador não consegue reproduzir o áudio. <a href="helium-tracktribe.mp3" target="_blank" download="helium-tracktribe.mp3" type="audio/mp3">Clique aqui para baixar o arquivo MP3.</a></p>
+</body>
+</html>

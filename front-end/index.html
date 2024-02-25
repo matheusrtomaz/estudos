@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><!--aqui insere a linguagem da página-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon-fundo-transparente.ico" type="image/x-icon"><!--Aqui que insere o Favicon-->
+    <title>Meu primeiro site</title>
+    <!--Eu possos criar uma TAG STYLE, criando um seletor para alguma coisa, mudando a TAG em todo o código-->
+    <style>
+        mark {
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, Mundo!</h1>
+    <hr><!--A tag <hr> faz com que se coloque um traço abaixo de algum parágrafo-->
+    <p>Esse é o meu primeiro<br>site em HTML!</p>
+    <p>Estou muito feliz :)</p>
+    <p>&lt;br&gt; faz com que apareça as tags</p>
+    <p>Quando queremos vários parágrafos, temos que ir pro css</p>
+    <!-- Isso é como se faz um comentário-->
+    <p><h3>Vamos adicionar alguns símbolos especiais:</h3>
+        &reg;
+        <br>&copy;
+        <br>&trade;
+        <br>&euro;
+        <br>&pound;
+        <br>&yen;<br>&cent;<br>&Delta;<br>&uarr;</p>
+<p><h3>Agora alguns emojis, que pode pegar o código no site da EmojiPedia</h3>
+&#x1F596;
+<br>&#x1F913;</p>
+<h3>Agora vou começar a inserir imagens dentro do site!</h3>
+<p>Para inserir iamgens, apenas coloca o nome "img" e quando aparecer todo o restante, dentro de src "CTRL+ESPAÇO"</p>
+<img src="logo-html5-200.png" alt="Logo HTML5">
+<img src="logo-css3-200.png" alt="Logo CSS3">
+<p>Agora para adicionar imagens a partir de links, apenas pego o link e insiro ao invés do caminho da imagem</p>
+<img src="https://cdn.iconscout.com/icon/free/png-256/free-javascript-2038874-1720087.png" alt="Logo JavaScript">
+<p><b>OBS:</b> <em>Se o site com a imagem cair,</em> <strong>a imagem aqui no meu site,</strong> <b>também para de funcionar</b></p>
+<P><i>Testando</i>
+<br><u>Assim como esta palavra sublinhada</u></P>
+
+<!--Abaixo tem o exemplo do Guanabara, que explicou sobre semântica e não semântica-->
+<h1>Principais formatações</h1>
+<h2>Negrito / Destaque</h2>
+<p>Nesta frase temos um <b>termo em negrito</b> usando a tag B (não semântica).</p>
+<p>Nesta frase, tenho um <strong>termo em destaque</strong> usando a tag STRONG (semântica).</p>
+<h2>Italico / Enfase</h2>
+<p>Nesta frase, temos um <i>termo em itálico</i> usando a tag I (não semântica).</p> <p>Nesta frase, temos um <em>termo em ênfase</em> usando a tag EM (semântica).</p>
+
+<p>Para adicionar um envelopamento com alguma tag, selecione ela, e depois, <br>CTRL+SHIFT+P, e "wrap with abbreviation" para ficar como o exemplo abaixo.
+    <br><i>Este é o exemplo!</i>
+</p>
+<!--Há várias formas de deixar em Negrito, Itálico, etc. Como mencionado no código acima-->
+<h3>Agora vou colocar o Favicon</h3>
+Ir lá na HEAD e inserir "link:favicon" antes do título
+<p>Vou fazer uma palavra com <mark>MARCA TEXTO</mark> <mark>aqui!</mark><br>
+<!--Da pra mudar a cor do marca texto com CSS dentro da TAG MARK aqui no HTML usando o seguinte:</!--> <mark style="background-color: limegreen;">Vou mudar a cor do marca texto desta frase</mark></p>
+Para colocar letra menor <small>ficando assim </small>
+<p>Posso marcar um texto como <del>excluído</del><br>
+e também marcar como um texto <ins>inserido</ins></p>
+<p>Texto <sup>subescrito</sup> e texto <sub>subscrito</sub><br>
+X<sup>20</sup>+3<br>
+H<sub>2</sub>O</p>
+<!--isso é pra deixar as letras mono-espaçadas-->
+<p><code>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus facilis sunt similique aspernatur placeat dicta at, voluptates saepe, alias quam ad temporibus dolores iste eligendi maiores numquam sint velit. Ratione.</code></p>
+<pre> <!--SHIFT+TAB volta tudo pra trás, alinhando com o início-->
+    <code>
+        E se quiser colocar tudo bonitinho
+        como se fosse um código,
+        é só envelopar tudo com a tag PRE.
+Essa linha vai ser alinhada com o início.
+    </code>
+</pre>
+<h3>Citações</h3>
+<p>como diria, <q>o computador é um burro muito rápido</q></p>
+<h4>Blockquote</h4>
+<blockquote cite="https://www.amazon.com.br/HTML-CSS-Design-Build-Websites/dp/1118008189/ref=lp_13984945011_1_2?pf_rd_p=721161a6-b78b-47dc-9717-91545f5eca72&pf_rd_r=2DW61TMTBN76037SPEBJ&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&ufe=app_do%3Aamzn1.fos.6d798eae-cadf-45de-946a-f477d47705b9">
+    ela vai aparecer deslocada para a direita,<br>como um bloco de texto destacado.
+</blockquote>
+<H3>Abreviações</H3>
+Como é somente <abbr title="Um teste, para citar SIGLAS">teste</abbr>, só queremos ver como fica.
+<h3>Texto invertido</h3>
+<bdo dir="rtl">direita para a esquerda</bdo><br>
+<bdo dir="ltr">equerda para a direita</bdo>
+
+</body>
+</html>

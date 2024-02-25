@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1 {
+            background-color: lightgrey;
+
+            height: 300px;
+            width: 300px;
+
+            border: 10px solid rgb(104, 76, 43);
+
+            /*Ordem correta para colocar em shorthand é top, right, bottom, left, como sentido horário de um relógio*/
+            padding: 10px 10px 10px 10px;
+            /*
+                            padding: 10px 20px;
+            Se colocar dois valores tipo: 10px e 20px, é como se o primeiro valor fosse top e bottom e o segundo valor fosse right e left.
+            */
+
+            margin: 10px auto 40px auto; /*auto na direita e esquerda para centralizar a margin na pagina*/
+
+            outline: 5px dashed aqua;
+            outline-width: 5px; /*Tracejado fora da borda*/
+            outline-style: dashed;
+            outline-color: aqua;
+        }
+
+        a {
+            border-width: 10px;
+            border-style: solid;
+            border-color: red;
+            padding: 10px 10px 10px 10px;
+        }
+
+        /*
+            Da pra alterar a caracteristica da box, trocando de box-level para inline-level com 'display: inline;' ou o contrario em 'display: block;'
+        */
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1><!--Exemplo de box-level-->
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#">links são exemplos de caixas inline-level</a><!--Exemplo de inline-level-->. Vamos ver como tudo isso funciona.</p>
+</body>
+</html>
