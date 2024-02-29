@@ -77,3 +77,15 @@ section > p {
 header > p {
     color: white;
 }
+
+section.normal {
+    background-color: white;
+}
+
+section.normal > p {
+    color: black;
+}
+
+section.imagem {
+    
+}
