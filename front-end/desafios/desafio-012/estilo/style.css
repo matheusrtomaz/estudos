@@ -27,11 +27,6 @@ body {
     background-color: white;
 }
 
-p > a {
-    color: white;
-    text-decoration: none;
-}
-
 /*p > a:visited {
     color: blue;
 }*/
@@ -69,17 +64,19 @@ header > p:hover {
     transform: scale(1.1);
 }
 
+header > p > a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 10vh 0px 10vh 30px;
+    line-height: 2em;
+}
+
 section > p {
     font-family: "texto", sans-serif;
     color: black;
-}
-
-header > p {
-    color: white;
-}
-
-section.normal {
-    background-color: white;
 }
 
 section.normal > p {
@@ -87,5 +84,36 @@ section.normal > p {
 }
 
 section.imagem {
-    
+    background-color: black;
+    background-image: url("../imagens/background001.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.imagem > p {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.412);
+    width: 300px;
+    padding: 20px;
+}
+
+footer {
+    background-color: black;
+    height: 30px;
+}
+
+footer > p {
+    color: white;
+    text-align: center;
+    padding-top: 4px;
+}
+
+footer > p > a {
+    color: white;
+    text-decoration: none;
+}
+footer > p > a:hover {
+    text-decoration: underline;
 }
