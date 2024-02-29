@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: titulo;
+    src: url('../fontes/Passion_One/PassionOne-Regular.ttf') format(truetype);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: texto;
+    src: url("../fontes/Sriracha/Sriracha-Regular.ttf") format(truetype);
+    font-weight: normal;
+}
+
+:root {
+    --cor1: white;
+    --cor2: black;
+
+    --font-titulo: "fontes", sans-serif;
+    --font-texto: "texto", sans-serif;
+}
+* {
+    margin: 0px;
+}
+
+body {
+    background-color: white;
+}
+
+p > a {
+    color: white;
+    text-decoration: none;
+}
+
+/*p > a:visited {
+    color: blue;
+}*/
+
+
+header {
+    background-color: black;
+    max-width: 100%;
+    height: 19vh;
+}
+
+header > h1 {
+    color: white;
+    font-family: "titulo", Arial, sans-serif;
+    font-size: 7vh;
+    transition: 0.5s ease;
+    text-align: center;
+    padding-top: 30px;
+}
+
+header > h1:hover {
+    transform: scale(1.2);
+}
+
+header > p {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2vh;
+    transition: 0.5s ease;
+    font-weight: normal;
+    text-align: center;
+}
+
+header > p:hover {
+    transform: scale(1.1);
+}
+
+section > p {
+    font-family: "texto", sans-serif;
+    color: black;
+}
+
+header > p {
+    color: white;
+}
