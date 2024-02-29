@@ -35,16 +35,19 @@ body {
 header {
     background-color: black;
     width: 100%;
+    text-align: center;
 }
 
 header > h1 {
-    color: white;
+    background-color: white;
+    color: black;
     font-family: "titulo", Arial, sans-serif;
+    max-width: 300px;
     font-size: 6vw;
     transition: 0.5s ease;
-    text-align: center;
     padding-top: 50px;
     font-variant: small-caps;
+    background-position: center;
     /*
     transform: uppercase; (deixa tudo maiusculo)
     font-variant: small-caps; (deixa tudo maiusculo, mas a primeira letra maior)
@@ -72,6 +75,7 @@ header > p:hover {
 header > p > a {
     color: white;
     text-decoration: none;
+    font-weight: bolder;
 }
 
 section {
@@ -118,13 +122,9 @@ section.imagem#segunda {
 
 footer {
     background-color: black;
-    height: 30px;
-}
-
-footer > p {
     color: white;
+    padding: 10px;
     text-align: center;
-    padding-top: 4px;
 }
 
 footer > p > a {
