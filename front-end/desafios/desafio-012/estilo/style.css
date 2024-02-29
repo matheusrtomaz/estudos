@@ -34,30 +34,35 @@ body {
 
 header {
     background-color: black;
-    max-width: 100%;
-    height: 19vh;
+    width: 100%;
 }
 
 header > h1 {
     color: white;
     font-family: "titulo", Arial, sans-serif;
-    font-size: 7vh;
+    font-size: 6vw;
     transition: 0.5s ease;
     text-align: center;
-    padding-top: 30px;
+    padding-top: 50px;
+    font-variant: small-caps;
+    /*
+    transform: uppercase; (deixa tudo maiusculo)
+    font-variant: small-caps; (deixa tudo maiusculo, mas a primeira letra maior)
+    */
 }
 
 header > h1:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 header > p {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 2vh;
+    font-size: 2vw;
     transition: 0.5s ease;
     font-weight: normal;
     text-align: center;
+    padding-bottom: 50px;
 }
 
 header > p:hover {
@@ -77,19 +82,21 @@ section {
 section > p {
     font-family: "texto", sans-serif;
     color: black;
+    font-size: 3vw;
 }
 
 section.normal > p {
     color: black;
 }
 
-section.imagem {
+section.imagem#primeira {
     background-color: black;
     background-image: url("../imagens/background001.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    box-shadow: inset 0px 5px 7px 0px rgba(0, 0, 0, 0.438);
 }
 
 section.imagem > p {
@@ -97,6 +104,16 @@ section.imagem > p {
     background-color: rgba(0, 0, 0, 0.412);
     width: 300px;
     padding: 20px;
+}
+
+section.imagem#segunda {
+    background-color: black;
+    background-image: url("../imagens/background002.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: inset 0px 5px 7px 0px rgba(0, 0, 0, 0.438);
 }
 
 footer {
