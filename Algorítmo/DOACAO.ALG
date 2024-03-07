@@ -1,34 +1,26 @@
-algoritmo "doacao"
+algoritmo "mediaAproveitamento"
 var
-   d: inteiro
-   valor: real
+   N1, N2, MEDIA: real
+   aproveit: caractere
 inicio
    escreval ("---------------------------------")
-   escreval ("        CRIANÇA ESPERANÇA")
+   escreval ("       ESCOLA JAVALI CANSADO")
    escreval ("---------------------------------")
-   escreval ("Muito obrigado por sua ajuda")
-   escreval (" [1] para doar R$10 ")
-   escreval (" [2] para doar R$25 ")
-   escreval (" [3] para doar R$50 ")
-   escreval (" [4] para doar outros valores ")
-   escreval (" [5] para cancelar ")
+   escreva ("PRIMEIRA NOTA: ")
+   LEIA (N1)
    escreval ("---------------------------------")
-   leia (d)
-   escolha d
-   caso 1
-      valor <- 10
-   caso 2
-      valor <- 25
-   caso 3
-      valor <- 50
-   caso 4
-      escreva ("Qual o valor que você deseja doar? R$")
-      leia (valor)
-   caso 5
-      valor <- 0
-   fimescolha
+   escreva ("SEGUNDA NOTA: ")
+   LEIA (N2)
    escreval ("---------------------------------")
-   escreval ("    SUA DOAÇÃO FOI DE R$",valor)
+   MEDIA <- (N1 + N2) / 2
+   SE (MEDIA > 10) ENTAO
+      ESCREVA ("ERRO, DIGITE SUA NOTA NOVAMENTE") ENTAO
+      SE (MEDIA <= 10) E (MEDIA >= 9) ENTAO
+         ESCREVA ("MÉDIA: ", MEDIA)
+         ESCREVA ("APROVEITAMENTO: A")
+      FIMSE
+   FIMSE
+   escreval ("---------------------------------")
    escreval ("        MUITO OBRIGADO!")
    escreval ("---------------------------------")
 fimalgoritmo
