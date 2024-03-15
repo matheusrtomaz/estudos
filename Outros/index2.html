@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculando Média do Aluno</title>
+    <style>
+        #console {
+            width: 100%;
+            height: 200px;
+            resize: none;
+        }
+    </style>
+    <script src="app.js"></script>
+</head>
+<body>
+    <h1>Olá, mundo!</h1>
+    <textarea id="console" readonly></textarea>
+    <input type="text" id="input" placeholder="Digite um comando..." onkeydown="handleKeyPress(event)">
+    
+    <script>
+        question("Digite sua primeira nota: ", function(nota1) {
+            question("Digite sua segunda nota: ", function(nota2) {
+            let media = (parseFloat(nota1) + parseFloat(nota2)) / 2;
+            writeToConsole("Sua média é", media.toFixed(2));
+
+            if (media >= 7) {
+            console.log(" e você está APROVADO!");
+            } else {
+            if (media >= 5 && media < 7) {
+            console.log(" e você está de RECUPERAÇÃO!");
+            } else {
+            console.log(" e você está REPROVADO!");
+            }
+        }
+        rl.close();
+  });
+});
+            
+            if (event.key === "Enter") {
+                event.preventDefault();
+                const input = document.getElementById("input");
+                const command = input.value;
+                input.value = "";
+                writeToConsole("> " + command);
+                executeCommand(command);
+            }
+        }
+
+        function writeToConsole(message) {
+            const consoleElement = document.getElementById("console");
+            consoleElement.value += message + "\n";
+            consoleElement.scrollTop = consoleElement.scrollHeight;
+        }
+
+        function executeCommand(command) {
+            // Implemente a lógica de execução de comandos aqui
+            writeToConsole("Comando não implementado: " + command);
+        }
+    </script>
+    
+</body>
+</html>
