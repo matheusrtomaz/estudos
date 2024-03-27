@@ -1,17 +1,25 @@
-var alimento = "Verdura"
-switch (alimento){
-case "Proteína":
-    console.log("Carne")
+const readline = require('readline')
+const alimento = readline.createInterface({
+   
+input: process.stdin,
+output: process.stdout});
+alimento.question('Qual alimento você quer? (Proteína, Carboidrato, Fruta ou Verdura)', (alimento) => {
+
+switch (alimento.toLowerCase()){
+case "proteína":
+    console.log("Carne");
     break;
-case "Carboidrato":
-    console.log("Batata Doce")
+case "carboidrato":
+    console.log("Batata Doce");
     break;
-case "Fruta":
-    console.log("Banana")
+case "fruta":
+    console.log("Banana");
     break;
-case "Verdura":
-    console.log("Batata")
+case "verdura":
+    console.log("Batata");
     break;
 default:
-    console.log("Alimento Indisponível")
+    console.log("Alimento Indisponível");
 }
+}
+)
