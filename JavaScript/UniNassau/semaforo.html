@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semáforo</title>
+    <style>
+        img {
+          width: 200px;
+          height: auto;
+        }
+      </style>
+</head>
+<body>
+    <img id="semaforo" src="imagens/sinal-apagado.png" alt="Semáforo Apagado">
+
+    <div>
+      <button onclick="mudarCor('vermelho')">Vermelho</button>
+      <button onclick="mudarCor('amarelo')">Amarelo</button>
+      <button onclick="mudarCor('verde')">Verde</button>
+    </div>
+    
+    <script>
+    function mudarCor(cor) {
+      var img = document.getElementById('semaforo');
+      switch(cor) {
+        case 'vermelho':
+          img.src = 'imagens/sinal-vermelho.png';
+          setTimeout(function() {
+            img.src = 'imagens/sinal-apagado.png';
+          }, 2500);
+          break;
+        case 'amarelo':
+          img.src = 'imagens/sinal-amarelo.png';
+          setTimeout(function() {
+            img.src = 'imagens/sinal-apagado.png';
+          }, 2500);
+          break;
+        case 'verde':
+          img.src = 'imagens/sinal-verde.png';
+          setTimeout(function() {
+            img.src = 'imagens/sinal-apagado.png';
+          }, 2500);
+          break;
+        default:
+          console.error('Cor inválida');
+      }
+    }
+    </script>
+</body>
+</html>
