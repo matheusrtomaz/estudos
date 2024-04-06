@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Grandes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        caption {
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+        td, th {
+            border: solid 1px black;
+            text-align: center;
+            padding: 10px;
+        }
+        thead, tfoot {
+            background-color: grey;
+            color: white;
+        }
+        tbody tr:nth-child(even) { 
+            /*9
+            even = ímpar
+            odd = par
+            2n = pula 2 começando na segunda
+            2n-1 = pula 2 começando na primeira           
+            */ 
+            background-color: lightgray;
+        }
+        td.num {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        ANATOMIA PARA TABELAS GRANDES
+
+        CAPTION = Legenda da Tabela
+        TABLE
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    -->
+    <table>
+        <caption>População das Unidades Federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 120px;">População</th>
+            </tr>
+        </head>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minhas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 2644 943</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9 557 071</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">9 182 078</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11 433 957</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td class="num"><strong>0000</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
