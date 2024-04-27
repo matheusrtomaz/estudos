@@ -8,9 +8,20 @@
 <body>
     <h1>Testando o uso de um iframe</h1>
     <p>Acessando o site do 
-        
-        <iframe src="https://www.cursoemvideo.com/" frameborder="0"></iframe>
+        <!--Tamanho padrão do iframe é 300x150px-->
+        <iframe src="https://www.cursoemvideo.com/" frameborder="0">
+
+            <a href="https://www.cursoemvideo.com/" target="_blank">Curso em Vídeo</a>
+            <!--Uma tag de link, caso o navegador não seja compatível com iframes-->
+        </iframe>
 
         para aprender a programar.</p>
+
+        <iframe src="https://www.cursoemvideo.com/" frameborder="0" height="500" width="500">
+
+            <a href="https://www.cursoemvideo.com/" target="_blank">Curso em Vídeo</a>
+
+        </iframe>
+        <!--Porém CSS é soberano para configurar os iframes, e vai subscrever as configurações-->
 </body>
 </html>
