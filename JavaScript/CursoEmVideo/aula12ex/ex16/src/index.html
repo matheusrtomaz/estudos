@@ -4,15 +4,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Verificador de Idade</title>
     <link href="./output.css" rel="stylesheet">
+    <script src="script.js"></script>
 </head>
 
-<body>
-    <h1 class="text-3xl font-bold underline">
-        Hello world!
-    </h1>
-    <p class="text-purple-500 font-black">oi</p>
+<body class="bg-blue-400 text-base font-normal font-sans">
+    <header class="text-white text-center m-4">
+        <h1 class="text-2xl">Verificador de Idade</h1>
+    </header>
+    <section class="bg-white rounded-lg p-4 max-w-sm mx-auto shadow-md">
+        <div class="text-center">
+            Ano de Nascimento:
+            <input class="border-2 rounded-md w-16 pl-1" type="number" name="txtano" id="txtano">
+        </div>
+        <div class="text-center mt-4">
+            Sexo:
+            <input type="radio" name="radsex" id="mas" checked>
+            <label class="pr-4" for="mas">Masculino</label>
+            <input type="radio" name="radsex" id="fem">
+            <label for="fem">Feminino</label>
+        </div>
+        <div class="text-center mt-4 mb-3">
+            <input class="bg-blue-500 text-white rounded-md pr-2 pl-2" type="button" value="Verificar"
+                onclick="verificar()">
+        </div>
+        <div class="text-center mb-1" id="res">
+            Preencha os dados acima para ver o resultado!
+        </div>
+        <div class="justify-center" id="foto">
+            <img alt="Foto" class="hidden">
+        </div>
+    </section>
+    <footer class="text-white text-center italic mt-4 ">
+        <p>Matheus Rodrigues &copy;</p>
+    </footer>
 </body>
 
 </html>
