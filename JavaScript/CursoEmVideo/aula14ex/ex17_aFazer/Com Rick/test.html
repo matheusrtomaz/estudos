@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora do Dia</title>
+    <style>
+        @charset "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+body {
+    background-color: black;
+    background-image: linear-gradient(to right, #ffffff77, #84e1ac00);
+    transition: background-color 0.5s ease;
+    color: white;
+}
+
+main {
+    background-color: white;
+    border-radius: 12px;
+    color: black;
+    width: 600px;
+    display: inline-block;
+    box-shadow: 2px 2px 9px rgba(0, 0, 0, 0.288);
+    max-width: 600px;
+}
+
+img {
+    border-radius: 1000px;
+    width: 300px;
+    box-shadow: 1px 1px 9px rgba(0, 0, 0, 0.288);
+}
+
+div {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    color: white;
+    padding-top: 20px;
+}
+    </style>
+    <script>
+        function changeBackgroundColor(color) {
+    document.body.style.backgroundColor = color;
+}
+function mudarTurno(turno) {
+    var msg = document.getElementById('msg');
+    var img = document.getElementById('turnos');
+    switch(turno) {
+        case 'dia':
+            img.src = 'imagens/dia.jpg';
+            document.getElementById('colorButton1').addEventListener('click', function() {
+            changeBackgroundColor('#3DADFF');
+            mudarTurno('dia');
+            });
+            msg.innerHTML = `Agora são 09:00 horas`;
+            break;
+        case 'tarde':
+            img.src = 'imagens/tarde.jpg';
+            document.getElementById('colorButton2').addEventListener('click', function() {
+            changeBackgroundColor('#FF7642');
+            mudarTurno('tarde');
+            });
+            msg.innerHTML = `Agora são 17:00 horas`;
+            break;
+        case 'noite':
+            img.src = 'imagens/noite.jpg';
+            document.getElementById('colorButton3').addEventListener('click', function() {
+            changeBackgroundColor('#352CBD');
+            mudarTurno('noite');
+            });
+            msg.innerHTML = `Agora são 21:00 horas`;
+            break;
+        default:
+            console.error('Turno inválido');
+    }
+}
+    </script>
+</head>
+<body>
+    <h1>Hora do Dia</h1>
+    <main>
+      <h3 id="msg">.</h3>
+      <img id="turnos" src="imagens/comeco-branco.jpg" alt="Dia">
+      <div>
+        <button id="colorButton1" onclick="mudarTurno('dia')">Dia</button>
+        <button id="colorButton2" onclick="mudarTurno('tarde')">Tarde</button>
+        <button id="colorButton3" onclick="mudarTurno('noite')">Noite</button>
+      </div>
+    </main>
+    <footer>
+        Matheus & Rick &copy;
+    </footer>
+</body>
+</html>
