@@ -1,0 +1,14 @@
+{
+  "name": "estudos",
+  "version": "1.0.0",
+  "description": "Curso HTML5 e CSS3 - Curso em Vídeo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.3"
+  }
+}
