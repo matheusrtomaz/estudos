@@ -9,9 +9,11 @@ div.card {
 }
 
 div.card-mae {
+    margin-top: 8vh;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;    
+    justify-content: center;
+    gap: 50px 
 }
 div.card-mae div.card div.card-body div.final-btn{
     display: flex;

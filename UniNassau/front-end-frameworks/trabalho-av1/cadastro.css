@@ -1,0 +1,19 @@
+@import '~bootstrap-icons/font/bootstrap-icons';
+
+body {
+    height: 100%;
+}
+
+header { 
+    margin: 0;
+    padding: 0;
+}
+
+div.formulario {
+    max-width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25vw;
+    margin-top: 10vh;
+}
