@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>Restaurant Sublime</title>
 </head>
@@ -18,7 +19,7 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" aria-current="page" href="cadastro.html">Cadastro</a>
@@ -29,8 +30,8 @@
                       Produtos
                     </a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Comidas</a></li>
-                      <li><a class="dropdown-item" href="#">Bebidas</a></li>
+                      <li><a class="dropdown-item" href="comidas.html">Comidas</a></li>
+                      <li><a class="dropdown-item" href="bebidas.html">Bebidas</a></li>
                       <li><hr class="dropdown-divider"></li>
                       <li><a class="dropdown-item" href="produtos.html">Ver todos</a></li>
                     </ul>
@@ -47,19 +48,72 @@
             
           </nav>
       
+          <!-- Banner de introdução -->
+    <section class="banner">
+      <div class="banner-overlay">
+          <div class="banner-content">
+              <h2>Bem-vindo ao Restaurant Sublime</h2>
+              <p>Descubra pratos que vão além da gastronomia, proporcionando uma verdadeira experiência sensorial.</p>
+              <a href="#" class="btn1">Explore o Menu</a>
+          </div>
+      </div>
+  </section>
+  
+
+  <!-- Seção de Destaques -->
+  <section class="highlights">
+      <h2>Nossos Destaques</h2>
+      <div class="menu">
+          <div class="menu-item">
+              <img src="imagem-comida1.jpg" alt="Prato 1">
+              <h3>Prato Especial 1</h3>
+              <p>Descrição do prato 1. Feito com ingredientes frescos e saborosos.</p>
+              <span class="price">R$ 45,00</span>
+          </div>
+
+          <div class="menu-item">
+              <img src="imagem-comida2.jpg" alt="Prato 2">
+              <h3>Prato Especial 2</h3>
+              <p>Descrição do prato 2. Uma mistura de sabores únicos.</p>
+              <span class="price">R$ 55,00</span>
+          </div>
+
+          <div class="menu-item">
+              <img src="imagem-comida3.jpg" alt="Prato 3">
+              <h3>Prato Especial 3</h3>
+              <p>Descrição do prato 3. Delicioso e preparado com amor.</p>
+              <span class="price">R$ 60,00</span>
+          </div>
+      </div>
+  </section>
+
+  <!-- Seção Sobre -->
+  <section class="about">
+      <h2>Sobre Nós</h2>
+      <p>O Restaurant Sublime é conhecido pela excelência gastronômica e pela combinação perfeita de sabores. 
+          Trabalhamos com ingredientes frescos e receitas que remetem à culinária contemporânea, sempre com um toque de inovação.</p>
+      <a href="#" class="btn2">Saiba Mais</a>
+  </section>
+
+  <!-- Seção de Contato -->
+  <section class="contact">
+      <h2>Contato</h2>
+      <p>Quer fazer uma reserva ou tem alguma dúvida? Entre em contato conosco!</p>
+      <form>
+          <input type="text" placeholder="Seu Nome" required>
+          <input type="email" placeholder="Seu E-mail" required>
+          <textarea placeholder="Sua Mensagem" required></textarea>
+          <button type="submit" class="btn3">Enviar Mensagem</button>
+      </form>
+  </section>
+
+  <!-- Rodapé -->
+  <footer>
+      <p>&copy; 2024 Restaurant Sublime. Todos os direitos reservados.</p>
+  </footer>
       
 
-  <!--<ul class="nav nav-pills nav-fill gap-2 p-1 small bg-primary rounded-5 shadow-sm" id="pillNav2" role="tablist" style="--bs-nav-link-color: var(--bs-white); --bs-nav-pills-link-active-color: var(--bs-primary); --bs-nav-pills-link-active-bg: var(--bs-white);">
-    <li class="nav-item" role="presentation">
-      <button class="nav-link active rounded-5" id="home-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="true">Home</button>
-    </li>
-    <li class="nav-item" role="presentation">
-      <button class="nav-link rounded-5" id="profile-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">Profile</button>
-    </li>
-    <li class="nav-item" role="presentation">
-      <button class="nav-link rounded-5" id="contact-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">Contact</button>
-    </li>
-  </ul>-->
+  
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
