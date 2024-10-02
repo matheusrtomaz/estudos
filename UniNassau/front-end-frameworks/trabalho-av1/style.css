@@ -7,14 +7,17 @@ nav.navbar-expand-lg bg-body-tertiary {
 }
 
 .banner {
-    background-image: url('img/business-man.png');
+    background-image: url('img/business-man.jpg');
     background-size: auto;
     background-position: top;
-    height: 700px;
+    height: 540px;
     display: flex;
     justify-content: center;
-    align-items: center;
     color: #fff;
+}
+
+.banner-content {
+    margin-top: 20px;
 }
 
 .banner-content h2 {
@@ -35,7 +38,7 @@ nav.navbar-expand-lg bg-body-tertiary {
     border-radius: 5px;
     font-size: 16px;
     position: absolute;
-    top: 90%;
+    top: 46.5%;
 }
 
 section a.btn2, button.btn3 {
