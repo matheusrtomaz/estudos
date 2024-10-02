@@ -64,3 +64,8 @@ header {
 .order-btn:hover {
     background-color: #0056b3;
 }
+
+div img.img {
+    width: 210px;
+    height: 140px;
+}
