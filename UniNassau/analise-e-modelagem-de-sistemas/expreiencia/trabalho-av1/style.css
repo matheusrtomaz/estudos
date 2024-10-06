@@ -96,6 +96,14 @@
     background-color: var(--fundo-secoes);
 }
 
+
+
+
+
+
+
+
+
 .banner {
     background-image: url('img/SemTitulo-122222.png');
     background-size: cover;
@@ -149,6 +157,21 @@
     background-color: var(--botao-destaques);
     color: var(--fundo-rodape);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .highlights {
     padding: 50px;

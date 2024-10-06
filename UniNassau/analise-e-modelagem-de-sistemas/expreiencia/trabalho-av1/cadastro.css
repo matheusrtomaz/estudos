@@ -9,30 +9,6 @@
     --bordas-textos-secundarios: #777;
 }
 
-body {
-    height: 100%;
-}
-
-header { 
-    margin: 0;
-    padding: 0;
-}
-
-div.formulario {
-    max-width: 50vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 25vw;
-    margin-top: 10vh;
-}
-
-:root {
-    --texto: #e0e0e0;
-    --fundo-rodape: #1a1a1a;
-    --bordas-textos-secundarios: #777;
-}
-
 #header-img {
     background-color: var(--fundo-rodape);
     color: var(--texto);
@@ -112,4 +88,41 @@ div.formulario {
 .d-flex .form-control {
     color: var(--texto);
     background-color: var(--fundo-secoes); /* Fundo das seções */
+}
+
+
+
+
+
+
+
+
+
+body {
+    background-color: var(--fundo-secoes);
+}
+
+
+div.formulario {
+    max-width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25vw;
+    margin-top: 10vh;
+    color: var(--texto);
+}
+
+
+main #btn-c {
+    background-color: var(--fundo-bota-ativo);
+    color: var(--texto);
+    padding: 10px 20px;
+    border-color: var(--fundo-bota-ativo);
+}
+
+main #btn-c:hover {
+    background-color: var(--botao-destaques);
+    color: var(--fundo-rodape);
+    border-color: var(--botao-destaques);
 }
