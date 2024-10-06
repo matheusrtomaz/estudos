@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: #1f1f1f;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    flex: 1;
+    text-align: left;
+    color: #00bcd4;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex: 2;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.2em;
+}
+
+.search-bar {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.search-bar input {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+.search-bar button {
+    padding: 5px 10px;
+    background-color: #00bcd4;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.home-section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #121212;
+}
+
+.home-section h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.cta-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00bcd4;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.services-section {
+    padding: 50px 0;
+    background-color: #1f1f1f;
+}
+
+.services-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.service {
+    margin: 20px 0;
+}
+
+.about-section {
+    padding: 50px 0;
+}
+
+.contact-section {
+    padding: 50px 0;
+    background-color: #1f1f1f;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #121212;
+    color: #ffffff;
+}

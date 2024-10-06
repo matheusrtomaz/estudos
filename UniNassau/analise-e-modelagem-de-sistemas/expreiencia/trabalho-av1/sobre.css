@@ -1,0 +1,13 @@
+@import '~bootstrap-icons/font/bootstrap-icons';
+
+div.card-mae {
+    margin: 8vh 15vw 8vh 15vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px 
+}
+
+p {
+    text-indent: 30px;
+}
