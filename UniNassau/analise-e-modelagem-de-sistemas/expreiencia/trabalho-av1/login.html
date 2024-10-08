@@ -8,6 +8,26 @@
     <title>Cadastro</title>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="login.css">
+
+
+
+
+    <script>
+   function validarFormulario() {
+            const email = document.getElementById('email').value.trim();
+            const password = document.getElementById('password').value.trim();
+
+            // Verifica se os campos estão preenchidos
+            if (email === "" || password === "") {
+                alert("Por favor, preencha todos os campos.");
+                return false; // Impede o envio do formulário
+            }
+
+            // Se tudo estiver preenchido, redireciona para a página de logado
+            window.location.href = 'logado.html';
+            return false; // Impede o envio do formulário padrão
+        }
+    </script>
 </head>
 <body>
   <header>
@@ -55,17 +75,33 @@
     <main class="alpha-bank-login-body">
       <div class="alpha-bank-login-container">
         <h1 class="alpha-bank-title">Bem-vindo ao<br>Alpha Bank</h1>
-        <form class="alpha-bank-login-form" action="#" method="post">
-            <div class="alpha-bank-input-group">
-                <label for="email" class="alpha-bank-label">E-mail</label>
-                <input type="email" id="email" name="email" class="alpha-bank-input" required>
-            </div>
-            <div class="alpha-bank-input-group">
-                <label for="password" class="alpha-bank-label">Senha</label>
-                <input type="password" id="password" name="password" class="alpha-bank-input" required>
-            </div>
-            <button type="button" class="alpha-bank-button" onclick="window.location.href='logado.html'">Entrar</button>
-        </form>
+
+
+
+
+
+
+        <form class="alpha-bank-login-form" action="#" method="post" onsubmit="return validarFormulario()">
+          <div class="alpha-bank-input-group">
+              <label for="email" class="alpha-bank-label">E-mail</label>
+              <input type="email" id="email" name="email" class="alpha-bank-input" required>
+          </div>
+          <div class="alpha-bank-input-group">
+              <label for="password" class="alpha-bank-label">Senha</label>
+              <input type="password" id="password" name="password" class="alpha-bank-input" required>
+          </div>
+          <button type="submit" class="alpha-bank-button">Entrar</button>
+      </form>
+
+
+    
+
+
+
+
+
+
+
         <div class="alpha-bank-footer">
             <a href="senha.html" class="alpha-bank-link">Esqueceu sua senha?</a><br>
             <a href="cadastro.html" class="alpha-bank-link">Abra sua conta</a>
