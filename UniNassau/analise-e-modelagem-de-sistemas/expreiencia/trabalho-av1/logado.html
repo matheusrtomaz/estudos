@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="logado.css">
+    <title>Alpha Bank</title>
+
+
+
+    <script>
+        function abrirTransferencia() {
+            window.location.href = "transferencia.html";
+        }
+
+        function abrirPagamento() {
+            window.location.href = "pagamento.html";
+        }
+
+        function abrirCartao() {
+            window.location.href = "cartao.html";
+        }
+
+        function abrirRelatorios() {
+            window.location.href = "relatorios.html";
+        }
+    </script>
+</head>
+<body>
+    <header class="header">
+        <h1 class="titulo-banco">Alpha Bank</h1>
+        <nav class="navegacao">
+            <ul>
+                <li><a href="#" class="nav-link">Conta</a></li>
+                <li><a href="#" class="nav-link">Cartão</a></li>
+                <li><a href="login.html" class="nav-link">Sair</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <h2>Bem-vindo ao seu Painel de Controle</h2>
+        <p>Escolha uma das opções abaixo:</p>
+    
+        <div class="opcoes">
+            <div class="opcao">
+                <h3>Transferência Bancária</h3>
+                <p>Realize transferências por PIX ou TED.</p>
+                <button class="btn-opcao" onclick="abrirTransferencia()">Acessar</button>
+            </div>
+    
+            <div class="opcao">
+                <h3>Pagamento de Boletos</h3>
+                <p>Pagamentos rápidos de seus boletos bancários.</p>
+                <button class="btn-opcao" onclick="abrirPagamento()">Acessar</button>
+            </div>
+    
+            <div class="opcao">
+                <h3>Bloqueio e Desbloqueio de Cartão</h3>
+                <p>Gerencie o bloqueio ou desbloqueio do seu cartão.</p>
+                <button class="btn-opcao" onclick="abrirCartao()">Acessar</button>
+            </div>
+    
+            <div class="opcao">
+                <h3>Relatórios Fiscais</h3>
+                <p>Acesse seus relatórios de movimentações bancárias.</p>
+                <button class="btn-opcao" onclick="abrirRelatorios()">Acessar</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
