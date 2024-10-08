@@ -14,6 +14,9 @@
 
 
 
+
+
+
 #header-img {
     background-color: var(--fundo-rodape);
     color: var(--texto);
@@ -118,6 +121,13 @@
 
 
 
+
+
+
+
+
+
+
 /* Estilos gerais */
 body {
     background-color: var(--fundo-secoes);
@@ -141,19 +151,18 @@ body {
     display: inline;
 }
 
-/* Container principal */
-.container {
-    margin-top: 50px;
-    padding: 40px;
-    text-align: center;
+.nav-link {
     color: var(--texto);
-    background-color: var(--fundo-rodape);
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
 }
 
-div.opcao p {
-    color: var(--texto);
+.nav-link:hover {
+    color: var(--botao-destaques);
+}
+
+.container {
+    padding: 40px;
+    text-align: center;
 }
 
 h2 {
@@ -161,48 +170,42 @@ h2 {
     margin-bottom: 20px;
 }
 
-.opcoes {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.opcao {
-    background-color: var(--fundo-secoes);
+/* Estilo dos formulários */
+.formulario {
+    background-color: var(--fundo-rodape);
+    padding: 20px;
     border-radius: 10px;
-    padding: 20px 20px 20px 20px;
-    width: 250px;
-    margin: 20px;
-    text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
 }
 
-.btn-opcao-1 {
-    margin-top: 40px;
-}
-
-#b2 {
-    margin-top: 60px;
-}
-
-
-.opcao h3 {
+label, input {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
     color: var(--texto);
 }
 
-.opcao h3.menor {
-    font-size: 20px;
+input[type="text"], input[type="number"] {
+    padding: 10px;
+    border: 1px solid var(--bordas-textos-secundarios);
+    border-radius: 5px;
+    background-color: var(--fundo-secoes);
+    color: var(--texto);
 }
 
-.opcao p {
-    color: var(--bordas-textos-secundarios);
+input[type="text"]:focus, input[type="number"]:focus {
+    outline: none;
+    border-color: var(--botao-destaques);
 }
 
 .btn-opcao {
     background-color: var(--fundo-bota-ativo);
     color: var(--texto);
+    padding: 10px 15px;
     border: none;
-    padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
     margin-top: 10px;
