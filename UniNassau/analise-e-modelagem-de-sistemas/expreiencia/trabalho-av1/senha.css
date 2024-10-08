@@ -101,24 +101,12 @@
 
 
 
-body {
-    background-color: var(--fundo-secoes);
-    height: auto;
-}
-
-
-
-
-
-
-
-
 main {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: var(--fundo-secoes);
-    padding: 10px 0px 10px 0px;
+    padding: 30px 0px 30px 0px;
 }
 
 body {
@@ -127,75 +115,95 @@ body {
 }
 
 
-/* Estilo do container principal */
-.card-mae {
+
+
+/* Container da página de recuperação de senha */
+.senha-container {
     background-color: var(--fundo-rodape);
-    padding: 20px;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
     text-align: center;
+}
+
+/* Título e descrição */
+.senha-titulo {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: var(--texto);
+}
+
+.senha-descricao {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: var(--bordas-textos-secundarios);
+}
+
+/* Formulário */
+.senha-form {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    width: 70vw;
-    border-radius: 7px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    align-items: center;
 }
 
-/* Título principal */
-.card-titulo {
-    font-size: 56px;
+.senha-label {
+    font-size: 14px;
     color: var(--texto);
-    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.senha-input {
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid var(--bordas-textos-secundarios);
+    border-radius: 5px;
     margin-bottom: 20px;
-    line-height: 1.2;
 }
 
-/* Subtítulo */
-.card-subtitulo {
-    font-size: 24px;
+/* Botão de enviar */
+.btn-enviar {
+    background-color: var(--fundo-bota-ativo);
     color: var(--texto);
-    opacity: 0.8;
-    margin-top: 0;
-}
-/* Seções individuais */
-.card-secao {
-    padding: 20px;
-    border-radius: 6px;
-    margin-bottom: 30px;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-/* Títulos das seções */
-.card-secao-titulo {
-    font-size: 22px;
+.btn-enviar:hover {
+    background-color: var(--botao-destaques);
+    color: var(--fundo-rodape);
+}
+
+/* Link para voltar ao login */
+.senha-voltar {
+    margin-top: 20px;
+}
+
+.voltar-link {
+    color: var(--botao-destaques);
+    text-decoration: none;
+}
+
+.voltar-link:hover {
     color: var(--texto);
-    margin-bottom: 10px;
-}
-
-/* Texto das seções */
-.card-secao-texto {
-    font-size: 18px;
-    color: var(--texto);
-    line-height: 1.6;
-    margin-bottom: 0;
+    text-decoration: underline;
 }
 
 
-.cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 100px;
-    margin-top: 3vh;
-    
-}
 
-.card-secao {
-    flex: 1 1 calc(33.333% - 20px);
-    box-sizing: border-box;
-    text-align: left;
-    max-width: 30vw;
-}
 
-.card-secao-titulo {
-    font-size: 24px;
-    margin-bottom: 10px;
+
+
+
+
+.mensagem-sucesso {
+    color: var(--botao-destaques);
+    font-size: 16px;
+    margin-top: 20px;
 }

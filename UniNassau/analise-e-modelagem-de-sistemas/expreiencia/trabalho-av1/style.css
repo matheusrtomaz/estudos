@@ -264,6 +264,7 @@ div img.img {
 .about p {
     font-size: 18px;
     margin-bottom: 20px;
+    padding: 0 200px 20px 200px;
 }
 
 .contact {
@@ -304,4 +305,8 @@ footer {
     color: var(--texto);
     text-align: center;
     padding: 20px;
+}
+
+footer p {
+    margin: 0;
 }

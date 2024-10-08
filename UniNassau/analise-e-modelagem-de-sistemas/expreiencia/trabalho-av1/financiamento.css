@@ -101,14 +101,6 @@
 
 
 
-body {
-    background-color: var(--fundo-secoes);
-    height: auto;
-}
-
-
-
-
 
 
 
@@ -118,7 +110,7 @@ main {
     justify-content: center;
     align-items: center;
     background-color: var(--fundo-secoes);
-    padding: 10px 0px 10px 0px;
+    padding: 30px 0px 30px 0px;
 }
 
 body {
@@ -126,76 +118,90 @@ body {
     height: 100vh;
 }
 
-
-/* Estilo do container principal */
-.card-mae {
+/* Container de simulação */
+.simulacao-container {
     background-color: var(--fundo-rodape);
-    padding: 20px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 70vw;
-    border-radius: 7px;
+    padding: 20px 40px 30px 40px;
+    border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    color: var(--texto);
 }
 
-/* Título principal */
-.card-titulo {
-    font-size: 56px;
+/* Container de resultado */
+.resultado-container {
+    background-color: var(--fundo-rodape);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
     color: var(--texto);
-    font-weight: 600;
+}
+
+/* Título e subtítulo */
+.simulacao-titulo, .resultado-titulo {
+    font-size: 32px;
+    color: var(--texto);
+    margin-bottom: 10px;
+}
+
+.simulacao-subtitulo {
+    font-size: 16px;
+    color: var(--texto);
     margin-bottom: 20px;
-    line-height: 1.2;
 }
 
-/* Subtítulo */
-.card-subtitulo {
-    font-size: 24px;
-    color: var(--texto);
-    opacity: 0.8;
-    margin-top: 0;
-}
-/* Seções individuais */
-.card-secao {
-    padding: 20px;
-    border-radius: 6px;
-    margin-bottom: 30px;
-}
-
-/* Títulos das seções */
-.card-secao-titulo {
-    font-size: 22px;
-    color: var(--texto);
-    margin-bottom: 10px;
-}
-
-/* Texto das seções */
-.card-secao-texto {
-    font-size: 18px;
-    color: var(--texto);
-    line-height: 1.6;
-    margin-bottom: 0;
-}
-
-
-.cards {
+/* Opções de financiamento */
+.opcoes-financiamento {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 100px;
-    margin-top: 3vh;
-    
+    justify-content: space-evenly;
+    margin-bottom: 20px;
 }
 
-.card-secao {
-    flex: 1 1 calc(33.333% - 20px);
-    box-sizing: border-box;
+/* Botão de simulação */
+.btn-simular {
+    background-color: var(--fundo-bota-ativo);
+    color: var(--texto);
+    border: none;
+    padding: 15px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.btn-simular:hover {
+    background-color: var(--botao-destaques);
+    color: var(--fundo-rodape);
+}
+
+/* Estilos do formulário */
+.form-container {
+    margin-top: 20px;
+}
+
+.form-label {
+    display: block;
     text-align: left;
-    max-width: 30vw;
+    margin-bottom: 10px;
+    font-size: 16px;
 }
 
-.card-secao-titulo {
-    font-size: 24px;
-    margin-bottom: 10px;
+.form-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid var(--bordas-textos-secundarios);
+    border-radius: 5px;
+    background-color: var(--fundo-secoes);
+    color: var(--texto);
+}
+
+.form-input::placeholder {
+    color: var(--bordas-textos-secundarios);
 }
