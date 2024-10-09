@@ -7,6 +7,7 @@
     <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     <title>Coridora-Pimenta</title>
 </head>
 <body>
@@ -18,7 +19,7 @@
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <a id="header-img" class="navbar-brand" href="index.html"><img src="public/logotipo.png" width="46px" alt="Bootstrap">Fishblog</a>
+                <a id="header-img" class="navbar-brand" href="index.html"><img src="./public/logotipo.png" width="46px" alt="Bootstrap">Fishblog</a>
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="index.html" style="color: white;">Home</a>
@@ -38,7 +39,7 @@
 <main>
     <div class="div-mae"></div>
         <div class="div1">
-            <img src="public/coridora.png" style="border-radius: 20px; width: 400px;">
+            <img src="./public/coridora.png" style="border-radius: 20px; width: 400px;">
             <p>A Coridora Pimenta, conhecida cientificamente como Corydoras panda, é uma espécie de peixe de água doce muito popular entre aquaristas. Originária das águas claras e com substrato arenoso de rios da região do Peru, essa espécie é reconhecida por sua aparência distintiva, que possui um corpo branco com manchas pretas, dando-lhe uma aparência similar a um panda.
             </p>
         </div>
@@ -57,8 +58,23 @@
     </div>
 
     <div class="div3">
-        <img src="public/mapafigure8.png" style="border: solid black 1px; border-radius: 20px;" >
+        <img src="./public/mapafigure8.png" style="border: solid black 1px; border-radius: 20px;" >
         <p>distribuição geográfica</p>
+    </div>
+
+    <h3>Calcule se o seu aquário pode acomodar um Kinguio</h3>
+    <p><strong>Volume mínimo necessário (litros):</strong> <span id="volume-peixe" data-volume="60">60</span> litros</p>
+    <div style="margin-bottom: 50px;">
+      <label for="width">Largura (cm):</label>
+      <input type="number" id="width" name="width">
+      <label for="depth">Profundidade (cm):</label>
+      <input type="number" id="depth" name="depth">
+      <label for="height">Altura (cm):</label>
+      <input type="number" id="height" name="height">
+    
+      <button onclick="calcularVolume()" style="background-color: rgb(26, 45, 59); color: white; border: none; padding: 10px 20px; border-radius: 5px; font-size: 16px; cursor: pointer; margin-top: 10px;">
+        Calcular Volume
+      </button>
     </div>
 
 </main>
