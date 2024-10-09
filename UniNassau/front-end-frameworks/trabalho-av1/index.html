@@ -8,6 +8,57 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>Restaurant Sublime</title>
+
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+    // Seleciona todos os itens do menu
+    const menuItems = document.querySelectorAll('.menu-item');
+
+    // Função para criar o pop-up
+    function showPopup(title, description) {
+        // Cria o container do pop-up
+        const popup = document.createElement('div');
+        popup.classList.add('popup');
+
+        // Cria o conteúdo do pop-up
+        popup.innerHTML = `
+            <div class="popup-content">
+                <h3>${title}</h3>
+                <p>${description}</p>
+                <button class="close-popup">Fechar</button>
+            </div>
+            <div class="popup-background"></div>
+        `;
+
+        // Adiciona o pop-up ao corpo da página
+        document.body.appendChild(popup);
+
+        // Fecha o pop-up ao clicar no botão de fechar ou no fundo
+        document.querySelector('.close-popup').addEventListener('click', () => {
+            document.body.removeChild(popup);
+        });
+
+        document.querySelector('.popup-background').addEventListener('click', () => {
+            document.body.removeChild(popup);
+        });
+    }
+
+    // Adiciona o evento de clique para cada item do menu
+    menuItems.forEach(item => {
+        item.addEventListener('click', () => {
+            // Obtém o título e a descrição do item clicado
+            const title = item.querySelector('h3').innerText;
+            const description = item.querySelector('p').innerText;
+
+            // Chama a função que exibe o pop-up
+            showPopup(title, description);
+        });
+    });
+});
+
+    </script>
+    
 </head>
 <body>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -100,6 +151,10 @@
   <footer>
       <p>&copy; 2024 Restaurant Sublime. Todos os direitos reservados.</p>
   </footer>
+
+
+
+
 </body>
 </html>
     

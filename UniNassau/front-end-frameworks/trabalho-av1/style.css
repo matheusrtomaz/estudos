@@ -146,3 +146,58 @@ footer {
     text-align: center;
     padding: 20px;
 }
+
+
+
+
+
+
+
+
+
+
+/* Estilo do pop-up */
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    z-index: 1001;
+    width: 300px;
+    text-align: center;
+}
+
+.popup-content h3 {
+    margin-bottom: 10px;
+}
+
+.popup-content p {
+    margin-bottom: 20px;
+}
+
+.close-popup {
+    padding: 10px 20px;
+    background-color: #004080;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.close-popup:hover {
+    background-color: #66b3ff;
+}
+
+/* Fundo esmaecido */
+.popup-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
