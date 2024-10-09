@@ -61,12 +61,16 @@
     
 </head>
 <body>
+        <!-- Navbar com links de navegação e busca -->
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
+                        <!-- Logo e nome do restaurante -->
               <a class="navbar-brand" href="index.html"><img src="img/logo-instagram.jpg" alt="Bootstrap" width="30">Restaurant Sublime</a>
+                        <!-- Botão do menu para dispositivos móveis -->
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
+                        <!-- Links do menu de navegação -->
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
@@ -75,7 +79,7 @@
                   <li class="nav-item">
                     <a class="nav-link" aria-current="page" href="cadastro.html">Cadastro</a>
                   </li>
-                  
+                                <!-- Menu dropdown para os produtos -->
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Produtos
@@ -91,13 +95,14 @@
                     <a class="nav-link" href="sobre.html">Sobre</a>
                   </li>
                 </ul>
+                            <!-- Campo de busca -->
                 <form class="d-flex" role="search">
                   <input class="form-control me-2" type="search" placeholder="Procurar" aria-label="Search">
                   <button class="btn btn-outline-success" type="submit">Procurar</button>
                 </form>
               </div>
-            
           </nav>
+              <!-- Seção do banner principal -->
     <section class="banner">
       <div class="banner-overlay">
           <div class="banner-content">
@@ -107,9 +112,11 @@
           </div>
       </div>
   </section>
+      <!-- Seção de destaques (pratos do menu) -->
   <section class="highlights">
       <h2>Nossos Destaques</h2>
       <div class="menu">
+                  <!-- Cada div representa um item do menu -->
           <div class="menu-item">
               <img class="img" src="img/escondidinho.jpg" alt="Prato 1">
               <h3>Escondidinho</h3>
@@ -132,15 +139,18 @@
           </div>
       </div>
   </section>
+      <!-- Seção "Sobre Nós" -->
   <section class="about">
       <h2>Sobre Nós</h2>
       <p>O Restaurant Sublime é conhecido pela excelência gastronômica e pela combinação perfeita de sabores. 
           Trabalhamos com ingredientes frescos e receitas que remetem à culinária contemporânea, sempre com um toque de inovação.</p>
       <a href="#" class="btn2">Saiba Mais</a>
   </section>
+      <!-- Seção de Contato -->
   <section class="contact">
       <h2>Contato</h2>
       <p>Quer fazer uma reserva ou tem alguma dúvida? Entre em contato conosco!</p>
+            <!-- Formulário para contato -->
       <form>
           <input type="text" placeholder="Seu Nome" required>
           <input type="email" placeholder="Seu E-mail" required>
@@ -148,6 +158,7 @@
           <button type="submit" class="btn3">Enviar Mensagem</button>
       </form>
   </section>
+      <!-- Rodapé da página -->
   <footer>
       <p>&copy; 2024 Restaurant Sublime. Todos os direitos reservados.</p>
   </footer>

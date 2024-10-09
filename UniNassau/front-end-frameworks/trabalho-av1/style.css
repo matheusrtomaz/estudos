@@ -1,11 +1,14 @@
+/* Importa ícones do Bootstrap */
 @import '~bootstrap-icons/font/bootstrap-icons';
 
+/* Estilo para o navbar (barra de navegação) */
 nav.navbar-expand-lg bg-body-tertiary {
     margin: 0;
     padding: 0;
 
 }
 
+/* Estilo para o banner principal */
 .banner {
     background-image: url('img/business-man.jpg');
     background-size: auto;
@@ -16,20 +19,24 @@ nav.navbar-expand-lg bg-body-tertiary {
     color: #fff;
 }
 
+/* Conteúdo centralizado do banner */
 .banner-content {
     margin-top: 20px;
 }
 
+/* Tamanho do título do banner */
 .banner-content h2 {
     font-size: 48px;
     margin-bottom: 20px;
 }
 
+/* Estilo do texto no banner */
 .banner-content p {
     font-size: 18px;
     margin-bottom: 20px;
 }
 
+/* Botão do banner */
 .btn1 {
     background-color: #007bff;
     color: white;
@@ -73,6 +80,7 @@ section a.btn2, button.btn3 {
     flex-wrap: wrap;
 }
 
+/* Estilo dos itens de menu na seção destaques */
 .menu-item {
     background-color: #fff;
     border-radius: 8px;
