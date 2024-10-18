@@ -8,6 +8,10 @@ nav.navbar-expand-lg bg-body-tertiary {
 
 }
 
+.nav-link {
+    background-color: blue;
+    color: white;
+ }
 /* Estilo para o banner principal */
 .banner {
     background-image: url('img/business-man.jpg');
