@@ -20,7 +20,7 @@
 #header-img {
     background-color: var(--fundo-rodape);
     color: var(--texto);
-    padding: 5px 10px 5px 5px;
+    padding: 5px 10px 5px 10px;
 }
 
 .btn {

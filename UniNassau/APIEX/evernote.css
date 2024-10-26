@@ -12,7 +12,7 @@
 #header-img {
     background-color: var(--fundo-rodape);
     color: var(--texto);
-    padding: 5px 10px 5px 5px;
+    padding: 5px 10px 5px 10px;
 }
 
 .btn {
@@ -98,90 +98,3 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--fundo-secoes);
-    padding: 30px 0px 30px 0px;
-}
-
-body {
-    background-color: var(--fundo-secoes);
-    height: 100vh;
-}
-
-
-
-
-/* Container do cartão de crédito */
-.cartao-container {
-    background-color: var(--fundo-rodape);
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    width: 100%;
-    max-width: 900px;
-    text-align: center;
-    color: var(--texto);
-}
-
-/* Título e subtítulo */
-.cartao-titulo {
-    font-size: 40px;
-    color: var(--texto);
-    margin-bottom: 20px;
-}
-
-.cartao-subtitulo {
-    font-size: 20px;
-    color: var(--texto);
-    margin-bottom: 20px;
-}
-
-/* Descrição e benefícios */
-.cartao-descricao {
-    font-size: 16px;
-    margin-bottom: 20px;
-}
-
-.cartao-beneficios {
-    text-align: left;
-    margin-bottom: 20px;
-}
-
-.cartao-beneficios li {
-    margin-bottom: 10px;
-    color: var(--texto);
-}
-
-/* Botão de redirecionamento */
-.btn-area-cliente {
-    background-color: var(--fundo-bota-ativo);
-    color: var(--texto);
-    border: none;
-    padding: 15px;
-    width: 20vw;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    margin-top: 20px;
-}
-
-.btn-area-cliente:hover {
-    background-color: var(--botao-destaques);
-    color: var(--fundo-rodape);
-}
