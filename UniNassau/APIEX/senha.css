@@ -1,0 +1,209 @@
+@import '~bootstrap-icons/font/bootstrap-icons';
+
+:root {
+    --texto: #e0e0e0;
+    --botao-destaques: #66b3ff;
+    --fundo-bota-ativo: #004080;
+    --fundo-secoes: #303030;
+    --fundo-rodape: #1a1a1a;
+    --bordas-textos-secundarios: #777;
+}
+
+#header-img {
+    background-color: var(--fundo-rodape);
+    color: var(--texto);
+    padding: 5px 10px 5px 5px;
+}
+
+.btn {
+    color: var(--texto);
+    border-color: var(--texto);
+}
+
+.btn:hover {
+    background-color: var(--fundo-bota-ativo);
+    color: var(--botao-destaques);
+    border-color: var(--fundo-rodape);
+}
+
+#contact ::placeholder {
+    color: var(--bordas-textos-secundarios);
+}
+
+.btn :active {
+    background-color: var(--botao-destaques);
+    color: var(--fundo-bota-ativo);
+    border-color: var(--texto);
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: var(--texto);
+}
+
+.dropdown-divider {
+    background-color: var(--texto);
+}
+
+.dropdown-menu {
+    background-color: var(--fundo-rodape);
+    color: var(--texto);
+    box-shadow: 4px 5px 5px rgba(0, 0, 0, 0.378);
+}
+
+.dropdown-item {
+    background-color: var(--fundo-rodape);
+    color: var(--texto);
+    border-radius: 5px;
+    transition: 0.2s ease;
+}
+
+.dropdown-item:hover {  
+    background-color: var(--texto);
+    transition: 0.2s ease;
+}
+
+.navbar {
+    background-color: var(--fundo-rodape);
+    color: var(--texto);
+    padding: 0px;
+}
+
+.navbar-brand {
+    font-size: 27px;
+    display: flex;
+    top: 22px;
+}
+
+.nav-link, #header {
+    background-color: var(--fundo-rodape);
+    color: var(--texto);
+}
+
+.nav-link:hover, #header:hover {
+    color: var(--bordas-textos-secundarios);
+}
+
+#nav-item-home {
+    margin-left: 4vw;
+}
+
+#nav-item-adc {
+    margin-left: 33vw;
+}
+
+.d-flex .form-control {
+    color: var(--texto);
+    background-color: var(--fundo-secoes);
+}
+
+
+
+
+
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--fundo-secoes);
+    padding: 30px 0px 30px 0px;
+}
+
+body {
+    background-color: var(--fundo-secoes);
+    height: 100vh;
+}
+
+
+
+
+/* Container da página de recuperação de senha */
+.senha-container {
+    background-color: var(--fundo-rodape);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Título e descrição */
+.senha-titulo {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: var(--texto);
+}
+
+.senha-descricao {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: var(--bordas-textos-secundarios);
+}
+
+/* Formulário */
+.senha-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.senha-label {
+    font-size: 14px;
+    color: var(--texto);
+    margin-bottom: 10px;
+}
+
+.senha-input {
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid var(--bordas-textos-secundarios);
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* Botão de enviar */
+.btn-enviar {
+    background-color: var(--fundo-bota-ativo);
+    color: var(--texto);
+    border: none;
+    padding: 15px;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-enviar:hover {
+    background-color: var(--botao-destaques);
+    color: var(--fundo-rodape);
+}
+
+/* Link para voltar ao login */
+.senha-voltar {
+    margin-top: 20px;
+}
+
+.voltar-link {
+    color: var(--botao-destaques);
+    text-decoration: none;
+}
+
+.voltar-link:hover {
+    color: var(--texto);
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+.mensagem-sucesso {
+    color: var(--botao-destaques);
+    font-size: 16px;
+    margin-top: 20px;
+}
