@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudando DOM em JS</title>
+
+    <style>
+        body {
+            color: rgb(43, 43, 43);
+        }
+    </style>
+</head>
+<body>
+    <h1>Estudando DOM em JavaScript</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Apredendo a usar o DOM em JavaScript</p>
+    <div id="msg" onclick="clicar()">Clique Aqui</div>
+
+
+    <script>
+        var p1 = document.getElementsByTagName('p')[0];
+        document.write(p1.innerHTML);
+
+        var back = document.body;
+        back.style.backgroundColor = 'rgb(43, 43, 43)';
+        back.style.color = 'white';
+
+        /* var msg = document.getElementById('msg');
+        msg.style.backgroundColor = 'blue'; */
+
+        function clicar() {
+            var msg = document.getElementById('msg');
+            if (msg.innerText === 'Clique Aqui') {
+                msg.innerText = 'Clicou!';
+            } else {
+                msg.innerText = 'Clique Aqui';
+            }
+            
+        }
+        
+
+
+
+        /* msg.addEventListener('click', function() {
+            alert('Clicou!');
+        }); */
+    </script>
+
+
+
+
+
+
+
+
+    <script>
+        /* Marca(Tag)
+        getElementsByTagName()
+
+        ID
+        getElementById()
+
+        Name
+        getElementsByName()
+
+        Class 
+        getElementsByClassName()
+
+        Seletor
+        querySelector()
+        querySelectorAll() */
+    </script>
+</body>
+</html>
