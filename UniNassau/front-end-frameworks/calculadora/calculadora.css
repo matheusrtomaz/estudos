@@ -1,0 +1,121 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Adicionado para empilhar o botão e a calculadora */
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    transition: background-color 0.3s;
+}
+
+.dark-mode-toggle {
+    margin-bottom: 10px; /* Espaçamento entre o botão e a calculadora */
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #d4d4d4;
+}
+
+.calculator {
+    width: 300px;
+    height: 450px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.display {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.history {
+    font-size: 14px;
+    color: #888888;
+    height: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.result {
+    font-size: 48px;
+    font-weight: bold;
+    color: #333333;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    padding: 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    background-color: #d4d4d4;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button.duplo {
+    grid-column: span 2;
+}
+
+button:hover {
+    background-color: #bcbcbc;
+}
+
+button:active {
+    background-color: #a5a5a5;
+}
+
+.dark-mode .dark-mode-toggle {
+    background-color: #f0f0f0;
+    color: #555555;
+}
+
+.dark-mode {
+    background-color: #333333;
+    color: #a5a5a5;
+}
+
+.dark-mode .calculator {
+    background-color: #555555;
+}
+
+.dark-mode .display {
+    color: #a5a5a5;
+}
+
+.dark-mode .history {
+    color: #a5a5a5;
+}
+
+.dark-mode .result {
+    color: #f0f0f0;
+}
+
+.dark-mode button {
+    background-color: #f0f0f0;
+    color: #333333;
+}
+
+.dark-mode button:hover {
+    background-color: #666666;
+}
+
+.dark-mode button:active {
+    background-color: #444444;
+}
