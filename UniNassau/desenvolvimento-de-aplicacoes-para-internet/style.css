@@ -1,16 +1,15 @@
 @import '~bootstrap-icons/font/bootstrap-icons';
 
 :root {
-    --texto: #e0e0e0;
-    --botao-destaques: #66b3ff;
-    --fundo-bota-ativo: #004080;
-    --fundo-secoes: #303030;
-    --fundo-rodape: #1a1a1a;
-    --bordas-textos-secundarios: #777;
+    --texto: #F2F2F2;
+    --fundo-bota-ativo: #2E594A;
+    --fundo-secoes: #3FBF83;
+    --botao-destaques: #58A67A;
+    --fundo-rodape: #F2D22E;
+    --bordas-textos-secundarios: black;
 }
 
 #header-img {
-    background-color: var(--fundo-rodape);
     color: var(--texto);
     padding: 5px 10px 5px 5px;
 }
@@ -21,13 +20,13 @@
 }
 
 .btn:hover {
-    background-color: var(--fundo-bota-ativo);
-    color: var(--botao-destaques);
-    border-color: var(--fundo-rodape);
+    background-color: rgba(0, 0, 0, 0.18);
+    color: #ffffff;
+    border-color: #ffffff;
 }
 
 #contact ::placeholder {
-    color: var(--bordas-textos-secundarios);
+    color: #2e594a7d;
 }
 
 .btn :active {
@@ -41,18 +40,17 @@
 }
 
 .dropdown-divider {
-    background-color: var(--texto);
+    background-color: var(--botao-destaques);
 }
 
 .dropdown-menu {
-    background-color: var(--fundo-rodape);
-    color: var(--texto);
+    background-color: var(--texto);
     box-shadow: 4px 5px 5px rgba(0, 0, 0, 0.378);
 }
 
 .dropdown-item {
-    background-color: var(--fundo-rodape);
-    color: var(--texto);
+    background-color: var(--texto);
+    color: var(--fundo-bota-ativo);
     border-radius: 5px;
     transition: 0.2s ease;
 }
@@ -63,8 +61,7 @@
 }
 
 .navbar {
-    background-color: var(--fundo-rodape);
-    color: var(--texto);
+    background-color: transparent;
     padding: 0px;
 }
 
@@ -75,12 +72,13 @@
 }
 
 .nav-link, #header {
-    background-color: var(--fundo-rodape);
+    /* background-color: var(--botao-destaques); */
+    background-image: url('img/ecotamps-banner-top2.png');
     color: var(--texto);
 }
 
 .nav-link:hover, #header:hover {
-    color: var(--bordas-textos-secundarios);
+    color: var(--fundo-bota-ativo);
 }
 
 #nav-item-home {
@@ -92,8 +90,8 @@
 }
 
 .d-flex .form-control {
-    color: var(--texto);
-    background-color: var(--fundo-secoes);
+    color: var(--fundo-bota-ativo);
+    background-color: var(--texto);
 }
 
 
@@ -105,7 +103,7 @@
 
 
 .banner {
-    background-image: url('img/SemTitulo-122222.png');
+    background-image: url('img/ecotamps-banner.png');
     background-size: cover;
     background-position: top;
     height: 540px;
@@ -144,7 +142,7 @@
 }
 
 .btn2, .btn3 {
-    background-color: var(--fundo-bota-ativo);
+    background-color: var(--botao-destaques);
     color: var(--texto);
     padding: 10px 20px;
     text-decoration: none;
@@ -154,11 +152,15 @@
 }
 
 .btn1:hover, .btn2:hover, .btn3:hover {
-    background-color: var(--botao-destaques);
-    color: var(--fundo-rodape);
+    background-color: var(--fundo-secoes);
+    color: var(--texto);
 }
 
 
+.btn2:hover {
+    background-color: var(--fundo-bota-ativo);
+    color: var(--texto);
+}
 
 
 
@@ -175,7 +177,7 @@
 
 .highlights {
     padding: 50px;
-    background-color: var(--fundo-secoes);
+    background-color: var(--texto);
     text-align: center;
     color: var(--texto);
 }
@@ -184,10 +186,12 @@
     font-size: 36px;
     margin-bottom: 20px;
     margin-left: 600px;
+    color: var(--botao-destaques);
 }
 
 .highlights p.subtitle {
     margin-left: 600px;
+    color: var(--botao-destaques);
 }
 
 .menu {
@@ -206,14 +210,14 @@
 }
 
 .menu-item {
-    background-color: var(--texto);
+    background-image: url('img/ecotamps-banner.png');
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
     text-align: center;
     width: 250px;
     height: 400px;
-    color: var(--fundo-secoes);
+    color: var(--texto);
     margin-top: 65px;
     transition: transform 0.5s ease-in-out;
 }
@@ -251,7 +255,7 @@ div img.img {
 
 .about {
     padding: 50px;
-    background-color: var(--bordas-textos-secundarios);
+    background-color: var(--fundo-secoes);
     text-align: center;
     color: var(--texto);
 }
@@ -269,7 +273,7 @@ div img.img {
 
 .contact {
     padding: 50px;
-    background-color: var(--fundo-secoes);
+    background-color: var(--fundo-bota-ativo);
     text-align: center;
     color: var(--texto);
 }
@@ -294,17 +298,18 @@ div img.img {
     width: 100%;
     padding: 10px;
     margin: 10px 0;
-    border: 1px solid var(--bordas-textos-secundarios);
+    border: 1px solid var(--fundo-secoes);
     border-radius: 5px;
     color: var(--texto);
-    background-color: var(--fundo-secoes);
+    background-color: var(--texto);
 }
 
 footer {
-    background: var(--fundo-rodape);
+    background: var(--fundo-bota-ativo);
     color: var(--texto);
     text-align: center;
     padding: 20px;
+    border-top: 1px solid var(--botao-destaques);
 }
 
 footer p {
