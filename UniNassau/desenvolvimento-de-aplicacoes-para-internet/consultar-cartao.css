@@ -1,0 +1,195 @@
+@import '~bootstrap-icons/font/bootstrap-icons';
+
+:root {
+    --texto: #e0e0e0;
+    --botao-destaques: #66b3ff;
+    --fundo-bota-ativo: #004080;
+    --fundo-secoes: #303030;
+    --fundo-rodape: #1a1a1a;
+    --bordas-textos-secundarios: #777;
+}
+
+
+
+
+
+
+
+
+
+#header-img {
+    background-color: var(--fundo-rodape);
+    color: var(--texto);
+    padding: 5px 10px 5px 5px;
+}
+
+.btn {
+    color: var(--texto);
+    border-color: var(--texto);
+}
+
+.btn:hover {
+    background-color: var(--fundo-bota-ativo);
+    color: var(--botao-destaques);
+    border-color: var(--fundo-rodape);
+}
+
+#contact ::placeholder {
+    color: var(--bordas-textos-secundarios);
+}
+
+.btn :active {
+    background-color: var(--botao-destaques);
+    color: var(--fundo-bota-ativo);
+    border-color: var(--texto);
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: var(--texto);
+}
+
+.dropdown-divider {
+    background-color: var(--texto);
+}
+
+.dropdown-menu {
+    background-color: var(--fundo-rodape);
+    color: var(--texto);
+    box-shadow: 4px 5px 5px rgba(0, 0, 0, 0.378);
+}
+
+.dropdown-item {
+    background-color: var(--fundo-rodape);
+    color: var(--texto);
+    border-radius: 5px;
+    transition: 0.2s ease;
+}
+
+.dropdown-item:hover {  
+    background-color: var(--texto);
+    transition: 0.2s ease;
+}
+
+.navbar {
+    background-color: var(--fundo-rodape);
+    color: var(--texto);
+    padding: 0px;
+}
+
+.navbar-brand {
+    font-size: 27px;
+    display: flex;
+    top: 22px;
+}
+
+.nav-link, #header {
+    background-color: var(--fundo-rodape);
+    color: var(--texto);
+}
+
+.nav-link:hover, #header:hover {
+    color: var(--bordas-textos-secundarios);
+}
+
+#nav-item-home {
+    margin-left: 4vw;
+}
+
+#nav-item-adc {
+    margin-left: 33vw;
+}
+
+.d-flex .form-control {
+    color: var(--texto);
+    background-color: var(--fundo-secoes);
+}
+
+.navbar-nav {
+    margin-left: 70vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Estilos gerais */
+body {
+    background-color: var(--fundo-secoes);
+    color: var(--texto);
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.container {
+    padding: 40px;
+    text-align: center;
+}
+
+h2 {
+    color: var(--texto);
+    margin-bottom: 20px;
+}
+
+/* Estilo dos formulários */
+.formulario {
+    background-color: var(--fundo-rodape);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+label, input {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    color: var(--texto);
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid var(--bordas-textos-secundarios);
+    border-radius: 5px;
+    background-color: var(--fundo-secoes);
+    color: var(--texto);
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: var(--botao-destaques);
+}
+
+.opcoes {
+    margin-bottom: 15px;
+}
+
+.opcoes label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--texto);
+}
+
+.btn-opcao {
+    background-color: var(--fundo-bota-ativo);
+    color: var(--texto);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn-opcao:hover {
+    background-color: var(--botao-destaques);
+    color: var(--fundo-rodape);
+}

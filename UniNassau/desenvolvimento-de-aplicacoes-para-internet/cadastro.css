@@ -1,0 +1,128 @@
+@import '~bootstrap-icons/font/bootstrap-icons';
+
+:root {
+    --texto: #e0e0e0;
+    --botao-destaques: #66b3ff;
+    --fundo-bota-ativo: #004080;
+    --fundo-secoes: #303030;
+    --fundo-rodape: #1a1a1a;
+    --bordas-textos-secundarios: #777;
+}
+
+#header-img {
+    background-color: var(--fundo-rodape);
+    color: var(--texto);
+    padding: 5px 10px 5px 5px;
+}
+
+.btn {
+    color: var(--texto);
+    border-color: var(--texto);
+}
+
+.btn:hover {
+    background-color: #004080; /* Fundo do botão ativo */
+    color: #66b3ff; /* Cor do botão de destaque */
+    border-color: var(--fundo-rodape);
+}
+
+#contact ::placeholder {
+    color: var(--bordas-textos-secundarios);
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: var(--texto);
+}
+
+.dropdown-divider {
+    background-color: var(--texto);
+}
+
+.dropdown-menu {
+    background-color: var(--fundo-rodape);
+    color: var(--texto);
+    box-shadow: 4px 5px 5px rgba(0, 0, 0, 0.378);
+}
+
+.dropdown-item {
+    background-color: var(--fundo-rodape);
+    color: var(--texto);
+    border-radius: 5px;
+    transition: 0.2s ease;
+}
+
+.dropdown-item:hover {  
+    background-color: var(--texto);
+    transition: 0.2s ease;
+}
+
+.navbar {
+    background-color: var(--fundo-rodape);
+    color: var(--texto);
+    padding: 0px;
+}
+
+.navbar-brand {
+    font-size: 27px;
+    display: flex;
+    top: 22px;
+}
+
+.nav-link, #header {
+    background-color: var(--fundo-rodape);
+    color: var(--texto);
+}
+
+.nav-link:hover, #header:hover {
+    color: var(--bordas-textos-secundarios);
+}
+
+#nav-item-home {
+    margin-left: 4vw;
+}
+
+#nav-item-adc {
+    margin-left: 33vw;
+}
+
+.d-flex .form-control {
+    color: var(--texto);
+    background-color: var(--fundo-secoes); /* Fundo das seções */
+}
+
+
+
+
+
+
+
+
+
+body {
+    background-color: var(--fundo-secoes);
+}
+
+
+div.formulario {
+    max-width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25vw;
+    margin-top: 10vh;
+    color: var(--texto);
+}
+
+
+main #btn-c {
+    background-color: var(--fundo-bota-ativo);
+    color: var(--texto);
+    padding: 10px 20px;
+    border-color: var(--fundo-bota-ativo);
+}
+
+main #btn-c:hover {
+    background-color: var(--botao-destaques);
+    color: var(--fundo-rodape);
+    border-color: var(--botao-destaques);
+}
