@@ -1,16 +1,15 @@
 @import '~bootstrap-icons/font/bootstrap-icons';
 
 :root {
-    --texto: #e0e0e0;
-    --botao-destaques: #66b3ff;
-    --fundo-bota-ativo: #004080;
-    --fundo-secoes: #303030;
-    --fundo-rodape: #1a1a1a;
-    --bordas-textos-secundarios: #777;
+    --texto: #F2F2F2;
+    --fundo-bota-ativo: #2E594A;
+    --fundo-secoes: #3FBF83;
+    --botao-destaques: #58A67A;
+    --fundo-rodape: #F2D22E;
+    --bordas-textos-secundarios: black;
 }
 
 #header-img {
-    background-color: var(--fundo-rodape);
     color: var(--texto);
     padding: 5px 10px 5px 5px;
 }
@@ -21,13 +20,13 @@
 }
 
 .btn:hover {
-    background-color: var(--fundo-bota-ativo);
-    color: var(--botao-destaques);
-    border-color: var(--fundo-rodape);
+    background-color: rgba(0, 0, 0, 0.18);
+    color: #ffffff;
+    border-color: #ffffff;
 }
 
 #contact ::placeholder {
-    color: var(--bordas-textos-secundarios);
+    color: #2e594a7d;
 }
 
 .btn :active {
@@ -41,18 +40,17 @@
 }
 
 .dropdown-divider {
-    background-color: var(--texto);
+    background-color: var(--botao-destaques);
 }
 
 .dropdown-menu {
-    background-color: var(--fundo-rodape);
-    color: var(--texto);
+    background-color: var(--texto);
     box-shadow: 4px 5px 5px rgba(0, 0, 0, 0.378);
 }
 
 .dropdown-item {
-    background-color: var(--fundo-rodape);
-    color: var(--texto);
+    background-color: var(--texto);
+    color: var(--fundo-bota-ativo);
     border-radius: 5px;
     transition: 0.2s ease;
 }
@@ -63,8 +61,7 @@
 }
 
 .navbar {
-    background-color: var(--fundo-rodape);
-    color: var(--texto);
+    background-color: transparent;
     padding: 0px;
 }
 
@@ -75,12 +72,13 @@
 }
 
 .nav-link, #header {
-    background-color: var(--fundo-rodape);
+    /* background-color: var(--botao-destaques); */
+    background-image: url('img/ecotamps-banner-top2.png');
     color: var(--texto);
 }
 
 .nav-link:hover, #header:hover {
-    color: var(--bordas-textos-secundarios);
+    color: var(--fundo-bota-ativo);
 }
 
 #nav-item-home {
@@ -92,19 +90,10 @@
 }
 
 .d-flex .form-control {
-    color: var(--texto);
-    background-color: var(--fundo-secoes);
+    color: var(--fundo-bota-ativo);
+    background-color: var(--texto);
 }
 
-
-
-
-
-
-body {
-    background-color: var(--fundo-secoes);
-    height: auto;
-}
 
 
 
@@ -117,20 +106,25 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--fundo-secoes);
-    padding: 10px 0px 10px 0px;
+    background-color: var(--texto);
+    padding: 30px 0px 30px 0px;
 }
 
 body {
-    background-color: var(--fundo-secoes);
+    background-color: var(--texto);
     height: 100vh;
 }
 
 
+
+
+
+
+
 /* Estilo do container principal */
 .card-mae {
-    background-color: var(--fundo-rodape);
-    padding: 20px;
+    background-image: url('img/ecotamps-banner-top2.png');
+    padding: 20px 20px 0px 20px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -142,7 +136,7 @@ body {
 
 /* Título principal */
 .card-titulo {
-    font-size: 56px;
+    font-size: 55px;
     color: var(--texto);
     font-weight: 600;
     margin-bottom: 20px;
@@ -158,7 +152,7 @@ body {
 }
 /* Seções individuais */
 .card-secao {
-    padding: 20px;
+    padding: 20px 20px 0px 20px;
     border-radius: 6px;
     margin-bottom: 30px;
 }

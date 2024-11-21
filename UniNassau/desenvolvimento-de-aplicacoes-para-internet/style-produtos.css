@@ -1,16 +1,15 @@
 @import '~bootstrap-icons/font/bootstrap-icons';
 
 :root {
-    --texto: #e0e0e0;
-    --botao-destaques: #66b3ff;
-    --fundo-bota-ativo: #004080;
-    --fundo-secoes: #303030;
-    --fundo-rodape: #1a1a1a;
-    --bordas-textos-secundarios: #777;
+    --texto: #F2F2F2;
+    --fundo-bota-ativo: #2E594A;
+    --fundo-secoes: #3FBF83;
+    --botao-destaques: #58A67A;
+    --fundo-rodape: #F2D22E;
+    --bordas-textos-secundarios: black;
 }
 
 #header-img {
-    background-color: var(--fundo-rodape);
     color: var(--texto);
     padding: 5px 10px 5px 5px;
 }
@@ -21,13 +20,13 @@
 }
 
 .btn:hover {
-    background-color: var(--fundo-bota-ativo);
-    color: var(--botao-destaques);
-    border-color: var(--fundo-rodape);
+    background-color: rgba(0, 0, 0, 0.18);
+    color: #ffffff;
+    border-color: #ffffff;
 }
 
 #contact ::placeholder {
-    color: var(--bordas-textos-secundarios);
+    color: #2e594a7d;
 }
 
 .btn :active {
@@ -41,18 +40,17 @@
 }
 
 .dropdown-divider {
-    background-color: var(--texto);
+    background-color: var(--botao-destaques);
 }
 
 .dropdown-menu {
-    background-color: var(--fundo-rodape);
-    color: var(--texto);
+    background-color: var(--texto);
     box-shadow: 4px 5px 5px rgba(0, 0, 0, 0.378);
 }
 
 .dropdown-item {
-    background-color: var(--fundo-rodape);
-    color: var(--texto);
+    background-color: var(--texto);
+    color: var(--fundo-bota-ativo);
     border-radius: 5px;
     transition: 0.2s ease;
 }
@@ -63,8 +61,7 @@
 }
 
 .navbar {
-    background-color: var(--fundo-rodape);
-    color: var(--texto);
+    background-color: transparent;
     padding: 0px;
 }
 
@@ -75,12 +72,13 @@
 }
 
 .nav-link, #header {
-    background-color: var(--fundo-rodape);
+    /* background-color: var(--botao-destaques); */
+    background-image: url('img/ecotamps-banner-top2.png');
     color: var(--texto);
 }
 
 .nav-link:hover, #header:hover {
-    color: var(--bordas-textos-secundarios);
+    color: var(--fundo-bota-ativo);
 }
 
 #nav-item-home {
@@ -92,9 +90,10 @@
 }
 
 .d-flex .form-control {
-    color: var(--texto);
-    background-color: var(--fundo-secoes);
+    color: var(--fundo-bota-ativo);
+    background-color: var(--texto);
 }
+
 
 
 
@@ -111,12 +110,12 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--fundo-secoes);
+    background-color: var(--texto);
     padding: 30px 0px 30px 0px;
 }
 
 body {
-    background-color: var(--fundo-secoes);
+    background-color: var(--texto);
     height: 100vh;
 }
 
@@ -142,8 +141,8 @@ div.card {
     margin: 10px;
     padding: 10px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.048);
-    background-color: var(--fundo-rodape);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.466);
+    background-image: url('img/ecotamps-banner-top2.png');
     color: var(--texto);
     text-align: center;
 }
@@ -168,4 +167,29 @@ a.btn {
 div.card img {
     height: 11rem;
     object-fit: cover;
+}
+
+
+
+
+
+
+
+
+footer {
+    color: var(--texto);
+    text-align: center;
+}
+
+.video {
+    display: inline-block;    
+    justify-content: center;
+    align-items: center;
+    padding: 60px 50px 50px 50px;
+}
+
+.video video {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.553);
 }
