@@ -185,7 +185,12 @@ footer {
     display: inline-block;    
     justify-content: center;
     align-items: center;
-    padding: 60px 50px 50px 50px;
+    padding: 30px 50px 50px 50px;
+}
+
+.video h1 {
+    color: var(--botao-destaques);
+    padding-bottom: 20px;
 }
 
 .video video {
