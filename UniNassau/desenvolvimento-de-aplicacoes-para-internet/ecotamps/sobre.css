@@ -72,7 +72,6 @@
 }
 
 .nav-link, #header {
-    /* background-color: var(--botao-destaques); */
     background-image: url('img/ecotamps-banner-top2.png');
     color: var(--texto);
 }
@@ -121,7 +120,7 @@ body {
 
 
 
-/* Estilo do container principal */
+
 .card-mae {
     background-image: url('img/ecotamps-banner-top2.png');
     padding: 20px 20px 0px 20px;
@@ -130,11 +129,48 @@ body {
     flex-direction: column;
     justify-content: center;
     width: 70vw;
+    max-width: 1200px;
     border-radius: 7px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
 }
 
-/* Título principal */
+@media (max-width: 768px) {
+    .card-mae {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .card-secao-texto, .card-titulo, .card-subtitulo {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .card-mae {
+        padding: 10px;
+    }
+
+    .card-titulo {
+        font-size: 1.2rem;
+    }
+
+    .card-subtitulo {
+        font-size: 1rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
 .card-titulo {
     font-size: 55px;
     color: var(--texto);
@@ -143,35 +179,32 @@ body {
     line-height: 1.2;
 }
 
-/* Subtítulo */
 .card-subtitulo {
     font-size: 24px;
     color: var(--texto);
     opacity: 0.8;
     margin-top: 0;
 }
-/* Seções individuais */
+
 .card-secao {
     padding: 20px 20px 0px 20px;
     border-radius: 6px;
     margin-bottom: 30px;
 }
 
-/* Títulos das seções */
+
 .card-secao-titulo {
     font-size: 22px;
     color: var(--texto);
     margin-bottom: 10px;
 }
 
-/* Texto das seções */
 .card-secao-texto {
     font-size: 18px;
     color: var(--texto);
     line-height: 1.6;
     margin-bottom: 0;
 }
-
 
 .cards {
     display: flex;
