@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="consultar-cartao.css">
+    <title>Alpha Bank</title>
+
+
+    <script>
+        // Simulação de bloqueio ou desbloqueio de cartão
+        function gerenciarCartao() {
+            const numeroCartao = document.getElementById('numero-cartao').value;
+            const acao = document.querySelector('input[name="acao"]:checked').value;
+
+            if (acao === 'bloquear') {
+                alert(`O cartão com número ${numeroCartao} foi bloqueado com sucesso.`);
+            } else {
+                alert(`O cartão com número ${numeroCartao} foi desbloqueado com sucesso.`);
+            }
+
+            return false; // Para evitar o envio real do formulário
+        }
+    </script>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid" id="header">
+              <a id="header-img" class="navbar-brand" href="index.html"><img src="img/1200x630wa-removebg-preview2.png" width="46px" alt="Bootstrap">Bank</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item" id="nav-item-home">
+                    <a id="header" class="nav-link active" aria-current="page" href="logado.html">Conta</a>
+                  </li>
+                  
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="consultar-cartao.html">Cartão</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="login.html">Sair</a>
+                  </li>
+                  
+              </div>
+          </nav>
+    </header>
+
+
+
+    <main>
+        <div class="container">
+            <h2>Gerenciamento de Cartões</h2>
+            <p>Aqui você pode bloquear ou desbloquear seu cartão:</p>
+    
+            <!-- Formulário para bloquear e desbloquear cartão -->
+            <div class="formulario">
+                <form id="form-cartao" onsubmit="return gerenciarCartao()">
+                    <label for="numero-cartao">Número do Cartão:</label>
+                    <input type="text" id="numero-cartao" placeholder="Insira o número do seu cartão" required>
+    
+                    <div class="opcoes">
+                        <label>
+                            <input type="radio" name="acao" value="bloquear" required> Bloquear Cartão
+                        </label>
+                        <label>
+                            <input type="radio" name="acao" value="desbloquear" required> Desbloquear Cartão
+                        </label>
+                    </div>
+    
+                    <button type="submit" class="btn-opcao">Confirmar</button>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
