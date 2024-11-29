@@ -6,45 +6,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="canva.css">
+    <link rel="stylesheet" href="trello.css">
     <title>Alpha Bank</title>
-    <script>
-        function calcularFinanciamento(event) {
-            event.preventDefault();  // Impede o comportamento padrão do form
-
-            const valorBem = parseFloat(document.getElementById("valor-bem").value);
-            const valorEntrada = parseFloat(document.getElementById("entrada").value);
-            const numParcelas = parseInt(document.getElementById("parcelas").value);
-
-            if (isNaN(valorBem) || isNaN(valorEntrada) || isNaN(numParcelas) || numParcelas <= 0) {
-                alert("Por favor, preencha todos os campos corretamente.");
-                return;
-            }
-
-            const valorFinanciado = valorBem - valorEntrada;
-            const valorParcela = (valorFinanciado / numParcelas).toFixed(2);
-
-            // Redirecionar para a tela de resultado com os dados da simulação
-            document.getElementById("resultado-valor-bem").innerText = `Valor do bem: R$ ${valorBem.toFixed(2)}`;
-            document.getElementById("resultado-valor-financiado").innerText = `Valor financiado: R$ ${valorFinanciado.toFixed(2)}`;
-            document.getElementById("resultado-num-parcelas").innerText = `Número de parcelas: ${numParcelas}`;
-            document.getElementById("resultado-valor-parcela").innerText = `Valor de cada parcela: R$ ${valorParcela}`;
-            
-            document.querySelector(".simulacao-container").style.display = 'none';
-            document.querySelector(".resultado-container").style.display = 'block';
-        }
-
-        function novaSimulacao() {
-            // Voltar para a tela de simulação
-            document.querySelector(".resultado-container").style.display = 'none';
-            document.querySelector(".simulacao-container").style.display = 'block';
-
-            // Limpar os campos
-            document.getElementById("valor-bem").value = "";
-            document.getElementById("entrada").value = "";
-            document.getElementById("parcelas").value = "";
-        }
-    </script>
 </head>
 <body>
   <header>
@@ -90,46 +53,51 @@
       </nav>
   </header>
 
-            <!-- Página de Simulação -->
-    <main>
-        <div class="simulacao-container">
-            <h1 class="simulacao-titulo">Simulação de Financiamento</h1>
-            <p class="simulacao-subtitulo">Escolha o tipo de financiamento que deseja simular:</p>
-        
-            <div class="opcoes-financiamento">
-                <label class="radio-container">
-                    <input type="radio" name="tipo-financiamento" value="veiculo" checked>
-                    Veículo
-                    <span class="checkmark"></span>
-                </label>
-                <label class="radio-container">
-                    <input type="radio" name="tipo-financiamento" value="casa">
-                    Casa
-                    <span class="checkmark"></span>
-                </label>
+
+
+        <main>
+            <div class="cartao-container">
+              <h1 class="cartao-titulo">Transforme Suas Ideias em Design com o Canva</h1>
+              <h2 class="cartao-subtitulo">A ferramenta perfeita para criar artes incríveis de forma prática</h2>
+      
+              <p class="cartao-descricao">O Canva é uma plataforma versátil e intuitiva, projetada para ajudar você a criar designs profissionais mesmo sem experiência. Ideal para apresentações, redes sociais, materiais gráficos e muito mais.</p>
+              <ul class="cartao-beneficios">
+                  <li>Modelos prontos para diversos tipos de design, desde postagens para Instagram até apresentações corporativas.</li>
+                  <li>Biblioteca rica em elementos gráficos, fontes e imagens de alta qualidade.</li>
+                  <li>Ferramentas simples de arrastar e soltar para facilitar a criação.</li>
+                  <li>Colaboração em tempo real com sua equipe, compartilhando edições instantaneamente.</li>
+                  <li>Acesso gratuito com opções premium para recursos avançados e exclusividades.</li>
+              </ul>
+      
+              <p class="cartao-call-to-action">Com o Canva, dar vida às suas ideias nunca foi tão fácil. Seja para uso pessoal ou profissional, ele oferece tudo o que você precisa para criar designs incríveis em minutos.</p>
+
+                <section class="sec1">
+                  <h2>Aula 01</h2>
+                  <video src="vid/parte1.mp4" width="750rem" controls poster="img/organize-agora/aula01-trello.png" height="400rem" type="video.mp4">Seu navegador não suporta o elemento de vídeo.</video>
+                </section>
+
+                <section class="sec2">
+                  <h2>Aula 02</h2>
+                  <video src="vid/parte2.mp4" width="750rem" controls poster="img/organize-agora/aula02-trello.png" height="400rem" type="video.mp4">Seu navegador não suporta o elemento de vídeo.</video>
+                </section>
+
+                <section class="sec3">
+                  <h2>Aula 03</h2>
+                <video src="vid/parte3.mp4" width="750rem" controls poster="img/organize-agora/aula03-trello.png" height="400rem" type="video.mp4">Seu navegador não suporta o elemento de vídeo.</video>
+                </section>
+                
+                <button class="btn-area-cliente" onclick="redirecionarAreaCliente()">Descubra outros cursos!</button>
             </div>
-            <div class="form-container">
-                <form onsubmit="calcularFinanciamento(event)">
-                    <label for="valor-bem" class="form-label">Valor do bem (R$):</label>
-                    <input type="number" id="valor-bem" name="valor-bem" class="form-input" placeholder="Digite o valor">
-                    <label for="entrada" class="form-label">Valor da entrada (R$):</label>
-                    <input type="number" id="entrada" name="entrada" class="form-input" placeholder="Digite o valor da entrada">
-                    <label for="parcelas" class="form-label">Número de parcelas:</label>
-                    <input type="number" id="parcelas" name="parcelas" class="form-input" placeholder="Número de parcelas">
-                    <button type="submit" class="btn-simular">Simular Financiamento</button>
-                </form>
-            </div>
-        </div>
-        <!-- Página de Resultado -->
-        <div class="resultado-container" style="display: none;">
-            <h1 class="resultado-titulo">Resultado da Simulação</h1>
-            <p id="resultado-valor-bem"></p>
-            <p id="resultado-valor-financiado"></p>
-            <p id="resultado-num-parcelas"></p>
-            <p id="resultado-valor-parcela"></p>
-        
-            <button onclick="novaSimulacao()" class="btn-simular">Nova Simulação</button>
-        </div>
-    </main>
+        </main>
+
+
+
+
+        <script>
+            function redirecionarAreaCliente() {
+                // Redireciona o usuário para a área do cliente
+                window.location.href = "produtos.html";
+            }
+        </script>
 </body>
 </html>
