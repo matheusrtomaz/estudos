@@ -55,7 +55,7 @@ function mudarTurno(turno) {
     var img = document.getElementById('turnos');
     switch(turno) {
         case 'dia':
-            img.src = 'imagens/dia.jpg';
+            img.src = '../midia/manha.png';
             document.getElementById('colorButton1').addEventListener('click', function() {
             changeBackgroundColor('#3DADFF');
             mudarTurno('dia');
@@ -63,7 +63,7 @@ function mudarTurno(turno) {
             msg.innerHTML = `Agora são 09:00 horas`;
             break;
         case 'tarde':
-            img.src = 'imagens/tarde.jpg';
+            img.src = '../midia/tarde.png';
             document.getElementById('colorButton2').addEventListener('click', function() {
             changeBackgroundColor('#FF7642');
             mudarTurno('tarde');
@@ -71,7 +71,7 @@ function mudarTurno(turno) {
             msg.innerHTML = `Agora são 17:00 horas`;
             break;
         case 'noite':
-            img.src = 'imagens/noite.jpg';
+            img.src = '../midia/noite.png';
             document.getElementById('colorButton3').addEventListener('click', function() {
             changeBackgroundColor('#352CBD');
             mudarTurno('noite');
@@ -88,7 +88,7 @@ function mudarTurno(turno) {
     <h1>Hora do Dia</h1>
     <main>
       <h3 id="msg">.</h3>
-      <img id="turnos" src="imagens/comeco-branco.jpg" alt="Dia">
+      <img id="turnos" src="../midia/manha.png" alt="Dia">
       <div>
         <button id="colorButton1" onclick="mudarTurno('dia')">Dia</button>
         <button id="colorButton2" onclick="mudarTurno('tarde')">Tarde</button>
