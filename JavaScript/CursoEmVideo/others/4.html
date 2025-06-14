@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+
+    <body>
+        <div>
+            <button type="submit" onclick="data()">Mostrar Data</button>
+            <p id="res"></p>
+        </div>
+
+        <script>
+            function data() {
+                var dia = new Date().getDate();
+                var mes = new Date().getMonth() + 1;
+                var ano = new Date().getFullYear();
+                var res = document.getElementById("res");
+                dia = String(dia).padStart(2, "0")
+                mes = String(mes).padStart(2, "0")
+
+                res.innerHTML = `${dia}/${mes}/${ano} ${hora}:${segundos}`;
+            }
+        </script>
+    </body>
+</html>
