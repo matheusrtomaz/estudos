@@ -1,0 +1,169 @@
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: 'Roboto', 'Open Sans', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Ubuntu, "Helvetica Neue", sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    color: #61dafb; /* Light blue */
+}
+
+#chat-container {
+    display: flex;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 600px;
+}
+
+#user-input {
+    flex-grow: 1;
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    border: 1px solid #333;
+    padding: 10px;
+    border-radius: 5px 0 0 5px; /* Rounded corners on the left */
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#user-input:focus {
+    outline: none;
+    border-color: #61dafb;
+    box-shadow: 0 0 8px #61dafb80; /* Subtle glow */
+}
+
+#send-button {
+    background-color: #6200ea; /* Purple */
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 0 5px 5px 0; /* Rounded corners on the right */
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#send-button:hover, #send-button:focus {
+    background-color: #7f39fb;
+    transform: scale(1.05);
+    outline: none; /* Remove default focus outline if using transform/box-shadow for focus */
+}
+
+#response-area {
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    padding: 15px;
+    width: 100%;
+    max-width: 600px;
+    min-height: 200px;
+    border-radius: 5px;
+    overflow-y: auto;
+    color: #e0e0e0;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Styling for individual messages if needed later */
+.user-message {
+    text-align: right;
+    margin-bottom: 10px;
+    color: #a0a0a0; /* Lighter color for user messages if desired */
+    animation: fadeInSlideUp 0.5s ease forwards;
+}
+
+.assistant-message {
+    text-align: left;
+    margin-bottom: 10px;
+    background-color: #2a2a2a; /* Slightly different background for assistant messages */
+    padding: 10px;
+    border-radius: 5px;
+    animation: fadeInSlideUp 0.5s ease forwards;
+}
+
+.error-message {
+    color: #ff6b6b; /* Light red for errors */
+    text-align: left;
+    margin-bottom: 10px;
+    background-color: #2a2a2a;
+    padding: 10px;
+    border-radius: 5px;
+    animation: fadeInSlideUp 0.5s ease forwards;
+}
+
+/* Keyframes for message appearance */
+@keyframes fadeInSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) { /* Target tablets and down to larger phones */
+  body {
+    padding: 15px; /* Reduce overall padding */
+    font-size: 15px; /* Adjust base font size for slightly smaller screens */
+  }
+
+  h1 {
+    font-size: 2em; /* Adjust header font size */
+  }
+
+  #chat-container {
+    flex-direction: column; /* Stack input and button vertically */
+    align-items: stretch; /* Make items take full width in column */
+  }
+
+  #user-input, #send-button {
+    width: 100%; /* Make them full width */
+    border-radius: 5px; /* Consistent rounding for stacked items */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  }
+
+  #user-input {
+    margin-bottom: 10px; /* Add space between input and button */
+  }
+
+  #send-button {
+    margin-left: 0; /* Remove any left margin if present from row layout */
+  }
+
+  #response-area {
+    font-size: 15px; /* Adjust font size for readability */
+    min-height: 150px; /* Adjust min-height if needed */
+  }
+}
+
+@media (max-width: 480px) { /* Target smaller phones */
+  body {
+    padding: 10px; /* Further reduce padding */
+    font-size: 14px; /* Smaller base font size */
+  }
+
+  h1 {
+    font-size: 1.8em; /* Smaller header */
+  }
+
+  #user-input, #send-button {
+    padding: 12px; /* Slightly larger tap targets */
+    font-size: 15px;
+  }
+  
+  #response-area {
+    font-size: 14px;
+  }
+
+  .user-message, .assistant-message, .error-message {
+    padding: 8px; /* Adjust message padding */
+  }
+}
