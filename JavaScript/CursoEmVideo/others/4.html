@@ -21,7 +21,19 @@
                 dia = String(dia).padStart(2, "0")
                 mes = String(mes).padStart(2, "0")
 
-                res.innerHTML = `${dia}/${mes}/${ano} ${hora}:${segundos}`;
+                var hora = new Date().getHours();
+                var minutos = new Date().getMinutes();
+                var segundos = new Date().getSeconds();
+                hora = String(hora).padStart(2, "0");
+                minutos = String(minutos).padStart(2, "0");
+                segundos = String(segundos).padStart(2, "0");
+
+                // var milisegundos = new Date().getMilliseconds();
+                // milisegundos = String(milisegundos).padStart(3, "0");
+
+                res.innerHTML = `${dia}/${mes}/${ano} ${hora}:${minutos}:${segundos}`;
+
+                setInterval(data, 1000)
             }
         </script>
     </body>
