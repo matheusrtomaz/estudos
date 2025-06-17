@@ -79,8 +79,9 @@
     </head>
     <body>
         <div>
-            <div class="imgLampada">
-                <img src="/fernandoleonid/lampada/img/desligada.jpg" alt="">
+            <div class="imgLampada" id="imgLampada">
+                <img id="lampada" src="./img/desligada.jpg" alt="Lâmpada" />
+                <img src="" alt="" />
             </div>
             <div class="switch" id="toggleSwitch">
                 <div class="toggle"></div>
@@ -90,15 +91,31 @@
         </div>
 
         <script>
-            // Script para alternar a imagem da lâmpada
-            var imgLampada = document.querySelector(".imgLampada img");
-            if 
+            const lampada = document.getElementById("lampada");
+            const botao = document.getElementById("toggleSwitch");
 
-            // Script para alternar o estado do botão
-            const switchBtn = document.getElementById("toggleSwitch");
+            const imagemDesligada = "./img/desligada.jpg";
+            const imagemLigada = "./img/ligada.jpg";
+            const imagemQuebrada = "./img/quebrada.jpg";
 
-            switchBtn.addEventListener("click", () => {
-                switchBtn.classList.toggle("on");
+            window.onload = () => {
+                lampada.src = imagemDesligada;
+            };
+
+            botao.addEventListener("click", () => {
+                if (lampada.src.includes("quebrada")) return;
+
+                botao.classList.toggle("on");
+                if (botao.classList.contains("on")) {
+                    lampada.src = imagemLigada;
+                } else {
+                    lampada.src = imagemDesligada;
+                }
+            });
+
+            lampada.addEventListener("dblclick", () => {
+                lampada.src = imagemQuebrada;
+                botao.classList.remove("on"); // opcional: desliga o botão
             });
         </script>
     </body>
