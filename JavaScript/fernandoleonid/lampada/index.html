@@ -10,9 +10,21 @@
                 justify-content: center;
                 align-items: center;
                 height: 100vh;
-                background-color: #f0f0f0;
                 margin: 0;
                 font-family: Arial, sans-serif;
+                background-image: url("./img/photo-1569470451072-68314f596aec.jpeg");
+                background-size: cover;
+                background-position: center;
+            }
+
+            .container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+                #lampada {
+                    width: 170px;
+                }
             }
 
             .switch {
@@ -78,10 +90,9 @@
         </style>
     </head>
     <body>
-        <div>
+        <div class="container">
             <div class="imgLampada" id="imgLampada">
-                <img id="lampada" src="./img/desligada.jpg" alt="Lâmpada" />
-                <img src="" alt="" />
+                <img id="lampada" src="./img/desligada.png" alt="Lâmpada" />
             </div>
             <div class="switch" id="toggleSwitch">
                 <div class="toggle"></div>
@@ -93,10 +104,11 @@
         <script>
             const lampada = document.getElementById("lampada");
             const botao = document.getElementById("toggleSwitch");
+            // const darkMode = document.querySelector("body");
 
-            const imagemDesligada = "./img/desligada.jpg";
-            const imagemLigada = "./img/ligada.jpg";
-            const imagemQuebrada = "./img/quebrada.jpg";
+            const imagemDesligada = "./img/desligada.png";
+            const imagemLigada = "./img/ligada.png";
+            const imagemQuebrada = "./img/quebrada.png";
 
             window.onload = () => {
                 lampada.src = imagemDesligada;
@@ -108,14 +120,21 @@
                 botao.classList.toggle("on");
                 if (botao.classList.contains("on")) {
                     lampada.src = imagemLigada;
+                    darkMode.style.backgroundImage =
+                        "url('./img/quartzo-Vena-White-Galaxy.jpg')";
                 } else {
                     lampada.src = imagemDesligada;
+                    darkMode.style.backgroundImage =
+                        "url('./img/photo-1569470451072-68314f596aec.jpeg')";
+                    darkMode.style.backgroundSize = "cover";
+                    darkMode.style.backgroundPosition = "center";
                 }
             });
 
-            lampada.addEventListener("dblclick", () => {
+            botao.addEventListener("dblclick", () => {
                 lampada.src = imagemQuebrada;
-                botao.classList.remove("on"); // opcional: desliga o botão
+                botao.classList.remove("on");
+                botao.style.backgroundColor = "rgba(255,255,255,0.5)";
             });
         </script>
     </body>
