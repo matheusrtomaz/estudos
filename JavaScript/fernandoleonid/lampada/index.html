@@ -23,7 +23,9 @@
                 border-radius: 50px;
                 cursor: pointer;
                 transition: background-color 0.4s ease-in-out;
-                box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.2);
+                box-shadow: inset 4px 4px 10px rgba(0, 0, 0, 0.2),
+                    inset -4px -4px 10px rgba(0, 0, 0, 0), 0 0 0 3px white,
+                    0 4px 20px rgba(0, 0, 0, 0.3); /* sombra externa */
             }
 
             .toggle {
@@ -76,12 +78,23 @@
         </style>
     </head>
     <body>
-        <div class="switch" id="toggleSwitch">
-            <div class="toggle"></div>
-            <div class="label label-on">ON</div>
-            <div class="label label-off">OFF</div>
+        <div>
+            <div class="imgLampada">
+                <img src="/fernandoleonid/lampada/img/desligada.jpg" alt="">
+            </div>
+            <div class="switch" id="toggleSwitch">
+                <div class="toggle"></div>
+                <div class="label label-on">ON</div>
+                <div class="label label-off">OFF</div>
+            </div>
         </div>
+
         <script>
+            // Script para alternar a imagem da lâmpada
+            var imgLampada = document.querySelector(".imgLampada img");
+            if 
+
+            // Script para alternar o estado do botão
             const switchBtn = document.getElementById("toggleSwitch");
 
             switchBtn.addEventListener("click", () => {
