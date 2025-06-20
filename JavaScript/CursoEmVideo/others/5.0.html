@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+    <style>
+        body {
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            margin-top: 15vh;
+        }
+
+        #master {
+            display: inline-flex;
+        }
+    </style>
+</head>
+<body>
+    <div id="tabuada">
+        <h1>
+            Tabuada
+        </h1>
+        <div>
+            <label for="numero">Número:</label>
+            <input type="number" name="numero" id="numero">
+            <button type="submit" name="numero" onclick="gerar()">Gerar</button>
+        </div>
+        <div id="master">
+            <div id="numeroEscolhido">
+                <p id="numEscolhido0"></p>
+                <p id="numEscolhido1"></p>
+                <p id="numEscolhido2"></p>
+                <p id="numEscolhido3"></p>
+                <p id="numEscolhido4"></p>
+                <p id="numEscolhido5"></p>
+                <p id="numEscolhido6"></p>
+                <p id="numEscolhido7"></p>
+                <p id="numEscolhido8"></p>
+                <p id="numEscolhido9"></p>
+                <p id="numEscolhido10"> </p>
+            </div>
+            <div id="numerosDireita">
+                <p>x 0 = </p>
+                <p>x 1 = </p>
+                <p>x 2 = </p>
+                <p>x 3 = </p>
+                <p>x 4 = </p>
+                <p>x 5 = </p>
+                <p>x 6 = </p>
+                <p>x 7 = </p>
+                <p>x 8 = </p>
+                <p>x 9 = </p>
+                <p> x 10 = </p>
+            </div>
+            <div id="respostas">
+                <p id="res0"></p>
+                <p id="res1"></p>
+                <p id="res2"></p>
+                <p id="res3"></p>
+                <p id="res4"></p>
+                <p id="res5"></p>
+                <p id="res6"></p>
+                <p id="res7"></p>
+                <p id="res8"></p>
+                <p id="res9"></p>
+                <p id="res10"></p>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        var numero = document.getElementById("numero");
+        var numEscolhido = document.getElementById("numEscolhido");
+
+        function gerar() {
+            var Numm = numero.value;
+            numEscolhido0.innerHTML = `${Numm}`;
+            numEscolhido1.innerHTML = `${Numm}`;
+            numEscolhido2.innerHTML = `${Numm}`;
+            numEscolhido3.innerHTML = `${Numm}`;
+            numEscolhido4.innerHTML = `${Numm}`;
+            numEscolhido5.innerHTML = `${Numm}`;
+            numEscolhido6.innerHTML = `${Numm}`;
+            numEscolhido7.innerHTML = `${Numm}`;
+            numEscolhido8.innerHTML = `${Numm}`;
+            numEscolhido9.innerHTML = `${Numm}`;
+            numEscolhido10.innerHTML = `${Numm}`;
+
+            if (Numm == 0 || Numm <= 0) {
+                window.alert("Digite um número válido no campo")
+            } else {
+               var resp0 = Numm * 0;
+            var resp1 = Numm * 1;
+            var resp2 = Numm * 2;
+            var resp3 = Numm * 3;
+            var resp4 = Numm * 4;
+            var resp5 = Numm * 5;
+            var resp6 = Numm * 6;
+            var resp7 = Numm * 7;
+            var resp8 = Numm * 8;
+            var resp9 = Numm * 9;
+            var resp10 = Numm * 10;
+            res0.innerHTML = `${resp0}`
+            res1.innerHTML = `${resp1}`
+            res2.innerHTML = `${resp2}`
+            res3.innerHTML = `${resp3}`
+            res4.innerHTML = `${resp4}`
+            res5.innerHTML = `${resp5}`
+            res6.innerHTML = `${resp6}`
+            res7.innerHTML = `${resp7}`
+            res8.innerHTML = `${resp8}`
+            res9.innerHTML = `${resp9}`
+            res10.innerHTML = `${resp10}` 
+            }            
+        }        
+    </script>
+</body>
+</html>

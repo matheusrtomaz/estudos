@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Tabuada</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box; /* Garante que padding e border sejam incluídos na largura/altura do elemento */
+            }
+            #res {
+                display: flex;
+                flex-direction: column;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Tabuada</h1>
+        </header>
+        <section>
+            <div>
+                <label for="num">Número: </label>
+                <input type="number" name="num" id="txtn" />
+                <input type="button" value="Gerar" onclick="tabuada()" />
+            </div>
+            <div id="res">
+                <option name="tabuada" id="seltab" size="10">
+                    Digite um número
+                </option>
+            </div>
+        </section>
+
+        <script>
+            function tabuada() {
+                let num = document.getElementById("txtn");
+                let tab = document.getElementById("seltab");
+                if (num.value.length == 0) {
+                    window.alert("Digite um número");
+                } else {
+                    let n = Number(num.value);
+                    let c = 1;
+                    tab.innerHTML = "";
+                    while (c <= 10) {
+                        let item = document.createElement("option");
+                        item.text = `${n} x ${c} = ${n * c}`;
+                        item.value = `tab${c}`;
+                        tab.appendChild(item);
+                        c++;
+                    }
+                }
+            }
+        </script>
+    </body>
+</html>
